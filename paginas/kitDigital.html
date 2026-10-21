@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/kitDigital.css">
+    <title>Kit Digital | Ponto Digital</title>
+</head>
+<body>
+
+<header class="cabecalho">
+    <a href="index.html" class="logo">Ponto <span class="ponto">digital</span></a>
+    <nav>
+        <ul class="menu">
+            <li class="menu-item"><a href="index.html">Início</a></li>
+            <li class="menu-item"><a href="digitalizar.html">Por que digitalizar?</a></li>
+            <li class="menu-item"><a href="jornada.html">Jornada</a></li>
+            <li class="menu-item"><a href="solucoes.html">Soluções</a></li>
+            <li class="menu-item"><a href="historia.html">Histórias</a></li>
+            <li class="menu-item ativo"><a href="kitDigital.html" aria-current="page" class="ativo">Kit Digital</a></li>
+            <li class="menu-item"><a href="contato.html">Contacto</a></li>
+            <li class="menu-item"><a href="faq.html">FAQ</a></li>
+        </ul>
+    </nav>
+     <button class="botao botao-principal sair">
+        <a href="jornada.html">
+            COMEÇAR A JORNADA
+        </a>
+    </button>
+    <button class="botao mobile" id="btn" onclick="abrirMenu()" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+        <i data-lucide="menu" id="menu-icon"></i>
+    </button>
+</header>
+
+<main>
+    <nav class="navbar-lateral" id="menu">
+        <ul class="menu-lateral">
+            <li class="nav-item"><a href="index.html">Início</a></li>
+            <li class="nav-item"><a href="digitalizar.html">Por que digitalizar?</a></li>
+            <li class="nav-item"><a href="jornada.html">Jornada</a></li>
+            <li class="nav-item"><a href="solucoes.html">Soluções</a></li>
+            <li class="nav-item"><a href="historia.html">Histórias</a></li>
+            <li class="nav-item"><a href="kitDigital.html" aria-current="page">Kit Digital</a></li>
+            <li class="nav-item"><a href="contato.html">Contacto</a></li>
+            <li class="nav-item"><a href="faq.html">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="kit-hero">
+        <div class="kit-hero-conteudo">
+            <h1>Seis coisas simples para começar a organizar o seu negócio.</h1>
+            <button class="botao botao-secundarioI sair">
+                <a href="href="#monte-o-kit"">
+                    Ver o que já tenho
+                </a>
+            </button>
+            
+        </div>
+    </section>
+
+    <!-- O QUE É -->
+    <section class="kit-sobre">
+        <h2>O que é o Kit Digital?</h2>
+        <div class="kit-sobre-texto">
+            <p>É um conjunto de práticas e ferramentas básicas que ajudam um negócio a guardar informação, atender clientes e ser encontrado. Nenhuma delas exige conhecimentos técnicos.</p>
+            <p>Cada negócio é diferente. Por isso, o kit serve como ponto de partida: use o que fizer sentido agora e deixe o resto para mais tarde.</p>
+        </div>
+    </section>
+
+    <!-- LISTA INTERATIVA -->
+    <section class="kit-lista" id="monte-o-kit">
+        <div class="kit-lista-topo">
+            <div>
+                <h2>Veja o que já tem no seu kit</h2>
+                <p>Toque em cada item que o seu negócio já faz. O que ficar por marcar é um bom próximo passo.</p>
+            </div>
+            <div class="kit-progresso" role="status" aria-live="polite">
+                <strong id="kit-contagem">0 de 6</strong>
+                <div class="kit-barra"><span id="kit-barra"></span></div>
+                <span id="kit-mensagem">Ainda não marcou nada. Sem problema, é por aqui que se começa.</span>
+            </div>
+        </div>
+
+        <ul class="kit-itens">
+            <li>
+                <button class="kit-item" aria-pressed="false">
+                    <i data-lucide="contact"></i>
+                    <span class="kit-item-texto">
+                        <strong>Contactos dos clientes num só lugar</strong>
+                        <span>Nomes e números guardados no telemóvel ou numa folha de cálculo, em vez de espalhados em cadernos e mensagens.</span>
+                    </span>
+                    <span class="kit-marca"><i data-lucide="check"></i></span>
+                </button>
+            </li>
+            <li>
+                <button class="kit-item" aria-pressed="false">
+                    <i data-lucide="receipt"></i>
+                    <span class="kit-item-texto">
+                        <strong>Registo de vendas e despesas</strong>
+                        <span>Uma tabela simples onde se anota o que entra e o que sai, para perceber como o negócio está a andar.</span>
+                    </span>
+                    <span class="kit-marca"><i data-lucide="check"></i></span>
+                </button>
+            </li>
+            <li>
+                <button class="kit-item" aria-pressed="false">
+                    <i data-lucide="package-search"></i>
+                    <span class="kit-item-texto">
+                        <strong>Lista de produtos e stock</strong>
+                        <span>Saber o que existe, a que preço e o que está a acabar, sem ter de contar tudo de cada vez.</span>
+                    </span>
+                    <span class="kit-marca"><i data-lucide="check"></i></span>
+                </button>
+            </li>
+            <li>
+                <button class="kit-item" aria-pressed="false">
+                    <i data-lucide="map-pin"></i>
+                    <span class="kit-item-texto">
+                        <strong>Negócio encontrável online</strong>
+                        <span>Localização, horário e contactos num mapa ou numa página de rede social, para quem ainda não o conhece.</span>
+                    </span>
+                    <span class="kit-marca"><i data-lucide="check"></i></span>
+                </button>
+            </li>
+            <li>
+                <button class="kit-item" aria-pressed="false">
+                    <i data-lucide="message-circle"></i>
+                    <span class="kit-item-texto">
+                        <strong>Um canal para falar com clientes</strong>
+                        <span>Um número de WhatsApp ou outro canal usado só para o negócio, com respostas e produtos mais fáceis de encontrar.</span>
+                    </span>
+                    <span class="kit-marca"><i data-lucide="check"></i></span>
+                </button>
+            </li>
+            <li>
+                <button class="kit-item" aria-pressed="false">
+                    <i data-lucide="shield-check"></i>
+                    <span class="kit-item-texto">
+                        <strong>Informação protegida</strong>
+                        <span>Palavras-passe próprias e uma cópia dos registos importantes num segundo local, caso o telemóvel se perca.</span>
+                    </span>
+                    <span class="kit-marca"><i data-lucide="check"></i></span>
+                </button>
+            </li>
+        </ul>
+    </section>
+
+    <!-- COMO COMEÇAR -->
+    <section class="kit-passos">
+        <h2>Como montar o kit sem pressa</h2>
+        <ol>
+            <li>
+                <span class="kit-passo-num">1</span>
+                <div>
+                    <h3>Escolha um problema</h3>
+                    <p>Comece pelo que mais tempo consome hoje: encontrar contactos, contar produtos ou responder a clientes.</p>
+                </div>
+            </li>
+            <li>
+                <span class="kit-passo-num">2</span>
+                <div>
+                    <h3>Use uma ferramenta simples</h3>
+                    <p>Se o telemóvel ou uma folha de cálculo resolvem, não precisa de mais. Experimente durante algumas semanas.</p>
+                </div>
+            </li>
+            <li>
+                <span class="kit-passo-num">3</span>
+                <div>
+                    <h3>Veja o que mudou e avance</h3>
+                    <p>Ficou mais fácil? Então acrescente o item seguinte. Se não ficou, ajuste ou troque a ferramenta.</p>
+                </div>
+            </li>
+        </ol>
+    </section>
+
+    <!-- AVISO -->
+    <section class="kit-aviso">
+        <i data-lucide="info"></i>
+        <p>Estas sugestões são pontos de partida. Antes de escolher uma ferramenta, considere o custo, o acesso à internet no seu local de trabalho e o tempo que a sua equipa tem para aprender. Nenhum item garante, por si só, mais vendas.</p>
+    </section>
+
+    <!-- FIM -->
+    <section class="fim">
+        <div class="container fim-conteudo">
+            <h2 class="fim-titulo">Já sabe por onde começar?</h2>
+            <p class="fim-texto">A Jornada mostra, passo a passo, como levar um negócio do papel ao digital.</p>
+            <a href="jornada.html" class="botao botao-principal fim-botao">Conhecer a jornada</a>
+        </div>
+    </section>
+</main>
+
+<footer class="fundo-sim">
+    <div class="footer-conteudo">
+        <div class="footer-grelha">
+            <div class="logo-footer">
+                <a href="index.html" class="logo">Ponto <span class="ponto">digital</span></a>
+                
+                <p>Tecnologia mais simples para pequenos negócios em Moçambique.</p>
+            </div>
+            <div class="redes-sociais">
+                <h3>PLATAFORMA</h3>
+                <nav><ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="digitalizar.html">Por que digitalizar</a></li>
+                    <li><a href="jornada.html">Jornada</a></li>
+                </ul></nav>
+            </div>
+            <div class="recursos">
+                <h3>RECURSOS</h3>
+                <nav><ul>
+                    <li><a href="solucoes.html">Soluções</a></li>
+                    <li><a href="historia.html">Histórias</a></li>
+                    <li><a href="kitDigital.html">Kit Digital</a></li>
+                </ul></nav>
+            </div>
+            <div class="ajuda">
+                <h3>AJUDA</h3>
+                <nav><ul>
+                    <li><a href="faq.html">Perguntas frequentes</a></li>
+                    <li><a href="contato.html">Contacto</a></li>
+                </ul></nav>
+            </div>
+        </div>
+        <div class="footer-final">
+            <p>&copy; 2026 Ponto Digital. Tecnologia mais simples para pequenos negócios em Moçambique.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="../js/index.js"></script>
+<script>
+    lucide.createIcons();
+
+    const itens = document.querySelectorAll(".kit-item");
+    const contagem = document.getElementById("kit-contagem");
+    const barra = document.getElementById("kit-barra");
+    const mensagem = document.getElementById("kit-mensagem");
+    const mensagens = [
+        "Ainda não marcou nada. Sem problema, é por aqui que se começa.",
+        "Um primeiro passo dado. Escolha agora o próximo item da lista.",
+        "Já tem alguma base. Veja qual dos itens por marcar lhe poupa mais tempo.",
+        "Metade do kit está montada. Continue ao seu ritmo.",
+        "Boa parte do caminho está feita. Falta pouco para ter o kit completo.",
+        "Falta só um item. Depois disso, o kit está completo.",
+        "Kit completo. Veja na Jornada como fazer o negócio crescer a partir daqui."
+    ];
+
+    function actualizar() {
+        const n = document.querySelectorAll('.kit-item[aria-pressed="true"]').length;
+        contagem.textContent = n + " de " + itens.length;
+        barra.style.width = (n / itens.length * 100) + "%";
+        mensagem.textContent = mensagens[n];
+    }
+
+    itens.forEach(item => {
+        item.addEventListener("click", () => {
+            const activo = item.getAttribute("aria-pressed") === "true";
+            item.setAttribute("aria-pressed", String(!activo));
+            actualizar();
+        });
+    });
+</script>
+</body>
+</html>

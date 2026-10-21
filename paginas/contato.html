@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/contato.css">
+    <title>Contacto | Ponto Digital</title>
+</head>
+<body>
+
+<header class="cabecalho">
+    <a href="index.html" class="logo">Ponto <span class="ponto">digital</span></a>
+    <nav>
+        <ul class="menu">
+            <li class="menu-item"><a href="index.html">Início</a></li>
+            <li class="menu-item"><a href="digitalizar.html">Por que digitalizar?</a></li>
+            <li class="menu-item"><a href="jornada.html">Jornada</a></li>
+            <li class="menu-item"><a href="solucoes.html">Soluções</a></li>
+            <li class="menu-item"><a href="historia.html">Histórias</a></li>
+            <li class="menu-item"><a href="kitDigital.html">Kit Digital</a></li>
+            <li class="menu-item ativo"><a href="contato.html" aria-current="page" class="ativo">Contacto</a></li>
+            <li class="menu-item"><a href="faq.html">FAQ</a></li>
+        </ul>
+    </nav>
+    <button class="botao botao-principal sair">
+        <a href="jornada.html">
+            COMEÇAR A JORNADA
+        </a>
+    </button>
+    <button class="botao mobile" id="btn" onclick="abrirMenu()" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+        <i data-lucide="menu" id="menu-icon"></i>
+    </button>
+</header>
+
+<main>
+    <nav class="navbar-lateral" id="menu">
+        <ul class="menu-lateral">
+            <li class="nav-item"><a href="paginaInicial.html">Início</a></li>
+            <li class="nav-item"><a href="digitalizar.html">Por que digitalizar?</a></li>
+            <li class="nav-item"><a href="jornada.html">Jornada</a></li>
+            <li class="nav-item"><a href="solucoes.html">Soluções</a></li>
+            <li class="nav-item"><a href="historia.html">Histórias</a></li>
+            <li class="nav-item"><a href="kitDigital.html">Kit Digital</a></li>
+            <li class="nav-item"><a href="contato.html" aria-current="page">Contacto</a></li>
+            <li class="nav-item"><a href="faq.html">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <!-- TOPO -->
+    <section class="ctt-topo">
+        <div class="ctt-topo-conteudo">
+            <p>Estou aqui para ajudar</p>
+            <h1>Fale comigo<span>.</span></h1>
+        </div>
+    </section>
+
+    <!-- CARTÃO DE CONTACTO -->
+    <section class="ctt-corpo">
+        <div class="ctt-cartao">
+
+            <!-- Informações -->
+            <div class="ctt-info">
+                <h2>Entre em contacto</h2>
+
+                <address>
+                    <p class="ctt-linha">
+                        <i data-lucide="map-pin"></i>
+                        <span>Bairro Matola A, Maputo<br>Moçambique</span>
+                    </p>
+
+                    <p class="ctt-linha">
+                        <i data-lucide="mail"></i>
+                        <span>
+                            <a href="mailto:ola@exemplo.co.mz">isabelnunesandrade039@gmail.com</a>
+                        </span>
+                    </p>
+
+                    <p class="ctt-linha">
+                        <i data-lucide="phone"></i>
+                        <span><a href="tel:+25884XXXXXXX">86 0838  239</a></span>
+                    </p>
+                </address>
+
+                <ul class="ctt-redes">
+                    <li><a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a></li>
+                    <li><a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a></li>
+                    <li><a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a></li> 
+                </ul>
+            </div>
+
+            <!-- Formulário -->
+            <form class="ctt-form" id="form-contacto" novalidate>
+                <div class="ctt-linha-dupla">
+                    <div class="ctt-campo">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Como podemos chamar-lhe?" autocomplete="name" required>
+                    </div>
+
+                    <div class="ctt-campo">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="+258 84 123 4567" autocomplete="tel">
+                    </div>
+                </div>
+
+                <div class="ctt-campo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="oseuemail@exemplo.com" autocomplete="email" required>
+                </div>
+
+                <div class="ctt-campo">
+                    <label for="mensagem">Como podemos ajudar?</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Conte-nos sobre o seu negócio e o que gostaria de organizar, ou envie a sua dúvida." required></textarea>
+                </div>
+
+                <p class="ctt-erro" id="ctt-erro" role="alert" hidden>Preencha o nome, um e-mail válido e a mensagem.</p>
+
+                <button type="submit" class="ctt-enviar">Enviar mensagem</button>
+            </form>
+
+        </div>
+    </section>
+</main>
+
+<footer class="fundo-sim">
+    <div class="footer-conteudo">
+        <div class="footer-grelha">
+            <div class="logo-footer">
+            <a href="index.html" class="logo">Ponto <span class="ponto">digital</span></a>
+                
+                <p>Tecnologia mais simples para pequenos negócios em Moçambique.</p>
+            </div>
+            <div class="redes-sociais">
+                <h3>PLATAFORMA</h3>
+                <nav><ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="digitalizar.html">Por que digitalizar</a></li>
+                    <li><a href="jornada.html">Jornada</a></li>
+                </ul></nav>
+            </div>
+            <div class="recursos">
+                <h3>RECURSOS</h3>
+                <nav><ul>
+                    <li><a href="solucoes.html">Soluções</a></li>
+                    <li><a href="historia.html">Histórias</a></li>
+                    <li><a href="kitDigital.html">Kit Digital</a></li>
+                </ul></nav>
+            </div>
+            <div class="ajuda">
+                <h3>AJUDA</h3>
+                <nav><ul>
+                    <li><a href="faq.html">Perguntas frequentes</a></li>
+                    <li><a href="contato.html">Contacto</a></li>
+                </ul></nav>
+            </div>
+        </div>
+        <div class="footer-final">
+            <p>&copy; 2026 Ponto Digital. Tecnologia mais simples para pequenos negócios em Moçambique.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="../js/index.js"></script>
+<script>
+    lucide.createIcons();
+
+    const EMAIL_DESTINO = "isabelnunesandrade039@gmail.com";
+
+    const form = document.getElementById("form-contacto");
+    const erro = document.getElementById("ctt-erro");
+
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const nome = form.nome.value.trim();
+        const email = form.email.value.trim();
+        const telefone = form.telefone.value.trim();
+        const mensagem = form.mensagem.value.trim();
+
+        if (!nome || !mensagem || !form.email.checkValidity() || !email) {
+            erro.hidden = false;
+            return;
+        }
+        erro.hidden = true;
+
+        const corpo = mensagem + "\n\nNome: " + nome +
+            (telefone ? "\nTelefone: " + telefone : "") +
+            "\nE-mail: " + email;
+
+        window.location.href = "mailto:" + EMAIL_DESTINO +
+            "?subject=" + encodeURIComponent("Contacto através do site, " + nome) +
+            "&body=" + encodeURIComponent(corpo);
+    });
+</script>
+</body>
+</html>

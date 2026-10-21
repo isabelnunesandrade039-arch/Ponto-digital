@@ -1,0 +1,607 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/index.css">
+
+    <title>Histórias | Ponto Digital</title>
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+        <a href="index.html" class="logo">Ponto <span class="ponto">digital</span></a>
+
+        <nav>
+           <ul class="menu">
+                <li class="menu-item"><a href="index.html">Inicio</a></li>
+                <li class="menu-item"><a href="digitalizar.html">Por que digitalizar?</a></li>
+                <li class="menu-item"><a href="jornada.html">Jornada</a></li>
+                <li class="menu-item"><a href="solucoes.html">Solucoes</a></li>
+                <li class="menu-item ativo"><a href="historia.html" class="ativo">Historia</a></li>
+                <li class="menu-item"><a href="kitDigital.html">Kit Digital</a></li>
+                <li class="menu-item"><a href="contato.html">Contacto</a></li>
+                <li class="menu-item"><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    <button class="botao botao-principal sair">
+        <a href="jornada.html">
+            COMEÇAR A JORNADA
+        </a>
+    </button>
+
+
+       
+ 
+        <button
+            class="botao mobile"
+            id="btn"
+            onclick="abrirMenu()"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+            aria-controls="menu"
+        >
+            <i data-lucide="menu" id="menu-icon"></i>
+        </button>
+    </header>
+
+    <main>
+
+        <!-- MENU LATERAL PARA TELEMÓVEIS -->
+        <nav class="navbar-lateral" id="menu">
+            <ul class="menu-lateral">
+                <li class="nav-item"><a href="index.html">Início</a></li>
+                <li class="nav-item"><a href="digitalizar.html">Por que digitalizar?</a></li>
+                <li class="nav-item"><a href="jornada.html">Jornada</a></li>
+                <li class="nav-item"><a href="solucoes.html">Soluções</a></li>
+                <li class="nav-item"><a href="historia.html">Histórias</a></li>
+                <li class="nav-item"><a href="kitDigital.html" aria-current="page">Kit Digital</a></li>
+                <li class="nav-item"><a href="contato.html">Contacto</a></li>
+                <li class="nav-item"><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+
+        <!-- HERO -->
+        <section class="hist-hero">
+            <div class="hist-hero-conteudo">
+
+                <h1>
+                    Pequenos negócios,<span>novas possibilidades.</span>
+                </h1>
+
+                <button class="botao botao-secundarioI sair">
+                    <a href="#historias">
+                        Explorar histórias
+                        <i data-lucide="arrow-down"></i>
+                    </a>
+                    
+                </button>
+
+               
+
+            </div>
+
+           
+        </section>
+
+        <!-- INTRODUÇÃO -->
+        <section class="hist-introducao">
+            <div class="hist-intro-titulo">
+                <span class="hist-subtitulo">REALIDADES DO DIA A DIA</span>
+
+                <h2>
+                    Cada negócio tem os seus desafios.
+                </h2>
+            </div>
+
+            <div class="hist-intro-texto">
+                <p>
+                    Controlar produtos, organizar encomendas ou chegar
+                    a novos clientes são desafios que fazem parte da
+                    rotina de muitos pequenos negócios.
+                </p>
+
+                <p>
+                    Estas histórias ilustrativas mostram situações
+                    possíveis e ajudam a compreender como pequenas
+                    mudanças digitais podem contribuir para melhorar
+                    a organização e o trabalho diário.
+                </p>
+            </div>
+        </section>
+
+        <!-- HISTÓRIAS EM DESTAQUE -->
+        <section class="hist-listagem" id="historias">
+
+            <div class="hist-seccao-cabecalho">
+                <div>
+                    <span class="hist-subtitulo">SITUAÇÕES DO QUOTIDIANO</span>
+
+                    <h2>Histórias que nos fazem pensar.</h2>
+                </div>
+
+                <p>
+                    Diferentes negócios, diferentes necessidades e
+                    diferentes caminhos para a digitalização.
+                </p>
+            </div>
+
+            <div class="hist-grelha">
+
+                <!-- HISTÓRIA 1 -->
+                <article class="hist-card">
+
+                    <a href="#hist-stock" class="hist-card-imagem">
+                        <img
+                            src="../img/historia/destaque_1.jpg"
+                            alt="Comerciante a verificar produtos e registos numa pequena loja"
+                            loading="lazy"
+                        >
+
+                        <span class="hist-numero">01</span>
+                    </a>
+
+                    <div class="hist-card-conteudo">
+
+                        <span class="hist-categoria">
+                            <i data-lucide="package"></i>
+                            Organização
+                        </span>
+
+                        <h3>
+                            Quando controlar o stock se torna um desafio
+                        </h3>
+
+                        <p>
+                            Numa pequena loja, acompanhar os produtos
+                            disponíveis através de anotações manuais
+                            pode tornar-se difícil, sobretudo quando
+                            há muitas vendas durante o dia.
+                        </p>
+
+                        <a href="#hist-stock" class="hist-link">
+                            Ler história
+                            <i data-lucide="arrow-up-right"></i>
+                        </a>
+
+                    </div>
+                </article>
+
+                <!-- HISTÓRIA 2 -->
+                <article class="hist-card">
+
+                    <a href="#hist-marcacoes" class="hist-card-imagem">
+                        <img
+                            src="../img/historia/destaque_2.jpg"
+                            alt="Profissional de um salão de beleza a consultar o telemóvel"
+                            loading="lazy"
+                        >
+
+                        <span class="hist-numero">02</span>
+                    </a>
+
+                    <div class="hist-card-conteudo">
+
+                        <span class="hist-categoria">
+                            <i data-lucide="calendar-days"></i>
+                            Atendimento
+                        </span>
+
+                        <h3>
+                            Muitas marcações, pouco tempo para organizar
+                        </h3>
+
+                        <p>
+                            Receber pedidos por chamadas e mensagens
+                            pode dificultar o acompanhamento dos
+                            horários e a organização das marcações
+                            de um salão de beleza.
+                        </p>
+
+                        <a href="#hist-marcacoes" class="hist-link">
+                            Ler história
+                            <i data-lucide="arrow-up-right"></i>
+                        </a>
+
+                    </div>
+                </article>
+
+                <!-- HISTÓRIA 3 -->
+                <article class="hist-card">
+
+                    <a href="#hist-visibilidade" class="hist-card-imagem">
+                        <img
+                            src="../img/historia/detalhe_1.jpg"
+                            alt="Comerciante a utilizar um telemóvel no seu estabelecimento"
+                            loading="lazy"
+                        >
+
+                        <span class="hist-numero">03</span>
+                    </a>
+
+                    <div class="hist-card-conteudo">
+
+                        <span class="hist-categoria">
+                            <i data-lucide="smartphone"></i>
+                            Presença digital
+                        </span>
+
+                        <h3>
+                            Como ajudar mais pessoas a descobrir uma loja
+                        </h3>
+
+                        <p>
+                            Um negócio que depende apenas das pessoas
+                            que passam à sua porta pode explorar formas
+                            digitais de apresentar os seus produtos
+                            e divulgar a sua localização.
+                        </p>
+
+                        <a href="#hist-visibilidade" class="hist-link">
+                            Ler história
+                            <i data-lucide="arrow-up-right"></i>
+                        </a>
+
+                    </div>
+                </article>
+
+            </div>
+
+            <p class="hist-nota">
+                Estas histórias são exemplos ilustrativos de desafios
+                comuns. Não representam entrevistas ou resultados
+                verificados de negócios específicos.
+            </p>
+
+        </section>
+
+        <!-- HISTÓRIA DETALHADA 1 -->
+        <section class="hist-detalhe" id="hist-stock">
+             <span class="hist-fundo-numero" aria-hidden="true">01</span>
+
+            <div class="hist-detalhe-imagem">
+                <img src="../img/historia/detalhe_2.jpg" alt="..." loading="lazy">
+            </div>
+
+           
+
+            <div class="hist-detalhe-conteudo">
+
+                <span class="hist-subtitulo">
+                    HISTÓRIA 01 · ORGANIZAÇÃO
+                </span>
+
+                <h2>
+                    Saber o que existe antes de faltar.
+                </h2>
+
+                <h3>O desafio</h3>
+
+                <p>
+                    Imagina uma pequena mercearia onde as entradas e
+                    saídas de produtos são anotadas num caderno.
+                    Quando o movimento aumenta, pode tornar-se difícil
+                    saber exatamente quais produtos ainda existem
+                    e quais precisam de ser repostos.
+                </p>
+
+                <h3>Uma possibilidade digital</h3>
+
+                <p>
+                    Um registo digital simples, atualizado regularmente,
+                    pode ajudar a acompanhar as quantidades disponíveis
+                    e a identificar produtos que precisam de reposição.
+                    Para alguns negócios, uma folha de cálculo pode
+                    ser suficiente para começar.
+                </p>
+
+                <div class="hist-aprendizagem">
+                    <i data-lucide="lightbulb"></i>
+
+                    <p>
+                        <strong>O que podemos aprender?</strong>
+                        A ferramenta deve responder a uma necessidade
+                        concreta. Nem todas as lojas precisam de um
+                        sistema complexo para começar a organizar
+                        os seus produtos.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- HISTÓRIA DETALHADA 2 -->
+        <section class="hist-detalhe hist-detalhe-invertido" id="hist-marcacoes">
+
+             <span class="hist-fundo-numero" aria-hidden="true">02</span>
+
+            <div class="hist-detalhe-imagem">
+                <img src="../img/historia/detalhe_1.jpg" alt="..." loading="lazy">
+            </div>
+            <div class="hist-detalhe-conteudo">
+
+                <span class="hist-subtitulo">
+                    HISTÓRIA 02 · ATENDIMENTO
+                </span>
+
+                <h2>
+                    Organizar o tempo também é cuidar dos clientes.
+                </h2>
+
+                <h3>O desafio</h3>
+
+                <p>
+                    Imagina uma profissional de beleza que recebe
+                    marcações por chamadas e mensagens. Quando vários
+                    clientes entram em contacto ao mesmo tempo,
+                    pode ser difícil acompanhar todos os horários
+                    e evitar esquecimentos.
+                </p>
+
+                <h3>Uma possibilidade digital</h3>
+
+                <p>
+                    Um calendário digital ou uma ferramenta de
+                    agendamento pode ajudar a reunir as marcações
+                    num só lugar. A escolha depende da quantidade
+                    de clientes e da forma como o salão trabalha.
+                </p>
+
+                <div class="hist-aprendizagem">
+                    <i data-lucide="lightbulb"></i>
+
+                    <p>
+                        <strong>O que podemos aprender?</strong>
+                        Organizar as informações num único local
+                        pode facilitar o trabalho, mesmo quando
+                        o negócio utiliza ferramentas simples.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- HISTÓRIA DETALHADA 3 -->
+        <section class="hist-detalhe" id="hist-visibilidade">
+
+             <span class="hist-fundo-numero" aria-hidden="true">03</span>
+
+            <div class="hist-detalhe-imagem">
+                <img src="../img/historia/detalhe_3.jpg" alt="..." loading="lazy">
+            </div>
+
+            <div class="hist-detalhe-conteudo">
+
+                <span class="hist-subtitulo">
+                    HISTÓRIA 03 · PRESENÇA DIGITAL
+                </span>
+
+                <h2>
+                    Um negócio também pode ser descoberto online.
+                </h2>
+
+                <h3>O desafio</h3>
+
+                <p>
+                    Imagina uma loja que tem bons produtos, mas cuja
+                    localização, horário de funcionamento e contactos
+                    são pouco conhecidos por quem ainda não a visitou.
+                </p>
+
+                <h3>Uma possibilidade digital</h3>
+
+                <p>
+                    Uma página web ou um perfil comercial online
+                    pode ajudar a apresentar o negócio, divulgar
+                    os contactos, indicar a localização e mostrar
+                    os produtos disponíveis.
+                </p>
+
+                <div class="hist-aprendizagem">
+                    <i data-lucide="lightbulb"></i>
+
+                    <p>
+                        <strong>O que podemos aprender?</strong>
+                        Estar presente online pode facilitar o acesso
+                        à informação sobre o negócio, embora não
+                        garanta, por si só, mais vendas.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- APRENDIZAGENS -->
+        <section class="hist-aprendizagens">
+
+            <div class="hist-aprendizagens-cabecalho">
+                <span class="hist-subtitulo">O QUE FICA DESTAS HISTÓRIAS?</span>
+
+                <h2>
+                    A tecnologia faz mais sentido quando responde
+                    a uma necessidade.
+                </h2>
+
+                <p>
+                    Cada negócio tem a sua realidade. Antes de escolher
+                    uma ferramenta digital, vale a pena compreender
+                    o problema que se pretende resolver.
+                </p>
+            </div>
+
+            <div class="hist-aprendizagens-grelha">
+
+                <article class="hist-aprendizagem-card">
+                    <div class="hist-icone">
+                        <i data-lucide="search"></i>
+                    </div>
+
+                    <h3>Observar primeiro</h3>
+
+                    <p>
+                        Identificar as tarefas que consomem tempo
+                        ou criam dificuldades no trabalho diário.
+                    </p>
+                </article>
+
+                <article class="hist-aprendizagem-card">
+                    <div class="hist-icone">
+                        <i data-lucide="wrench"></i>
+                    </div>
+
+                    <h3>Escolher com cuidado</h3>
+
+                    <p>
+                        Procurar ferramentas adequadas às necessidades,
+                        aos recursos e às capacidades do negócio.
+                    </p>
+                </article>
+
+                <article class="hist-aprendizagem-card">
+                    <div class="hist-icone">
+                        <i data-lucide="trending-up"></i>
+                    </div>
+
+                    <h3>Melhorar gradualmente</h3>
+
+                    <p>
+                        Aprender com a experiência e fazer mudanças
+                        à medida que surgem novas necessidades.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- ENCERRAMENTO -->
+        <section class="hist-encerramento">
+
+            <div class="hist-encerramento-icone">
+                <i data-lucide="route"></i>
+            </div>
+
+            <span class="hist-subtitulo">O SEU PRÓXIMO PASSO</span>
+
+            <h2>
+                Cada negócio tem a sua história.
+                O caminho digital também pode ser seu.
+            </h2>
+
+            <p>
+                Conhecer as possibilidades é um primeiro passo.
+                Descubra como começar a digitalização de forma
+                gradual, de acordo com a realidade do seu negócio.
+            </p>
+
+            <a href="jornada.html" class="hist-botao">
+                Conhecer a jornada
+                <i data-lucide="arrow-right"></i>
+            </a>
+
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="fundo-sim">
+        <div class="footer-conteudo">
+
+            <div class="footer-grelha">
+
+                <div class="logo-footer">
+                    <a href="index.html" class="logo">Ponto <span class="ponto">digital</span></a>
+                    
+
+                    <p>
+                        Tecnologia mais simples para pequenos negócios
+                        em Moçambique.
+                    </p>
+                </div>
+
+                <div class="redes-sociais">
+                    <h3>PLATAFORMA</h3>
+
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="index.html">Início</a>
+                            </li>
+                            <li>
+                                <a href="digitalizar.html">Por que digitalizar</a>
+                            </li>
+                            <li>
+                                <a href="jornada.html">Jornada</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="recursos">
+                    <h3>RECURSOS</h3>
+
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="solucoes.html">Soluções</a>
+                            </li>
+                            <li>
+                                <a href="historia.html">Histórias</a>
+                            </li>
+                            <li>
+                                <a href="kitDigital.html">Kit Digital</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="ajuda">
+                    <h3>AJUDA</h3>
+
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="faq.html">Perguntas frequentes</a>
+                            </li>
+                            <li>
+                                <a href="contato.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+
+            <div class="footer-final">
+                <p>
+                    &copy; 2026 Ponto Digital.
+                    Tecnologia mais simples para pequenos negócios
+                    em Moçambique.
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="../js/index.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+    <script src="../js/historia.js"></script>
+
+
+</body>
+</html>

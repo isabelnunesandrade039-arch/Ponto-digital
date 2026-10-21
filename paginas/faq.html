@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/faq.css">
+    <title>FAQ | Ponto Digital</title>
+</head>
+<body>
+
+<header class="cabecalho">
+    <a href="index.html" class="logo">Ponto <span class="ponto">digital</span></a>
+    <nav>
+        <ul class="menu">
+            <li class="menu-item"><a href="index.html">Início</a></li>
+            <li class="menu-item"><a href="digitalizar.html">Por que digitalizar?</a></li>
+            <li class="menu-item"><a href="jornada.html">Jornada</a></li>
+            <li class="menu-item"><a href="solucoes.html">Soluções</a></li>
+            <li class="menu-item"><a href="historia.html">Histórias</a></li>
+            <li class="menu-item"><a href="kitDigital.html">Kit Digital</a></li>
+            <li class="menu-item"><a href="contato.html">Contacto</a></li>
+            <li class="menu-item ativo"><a href="faq.html" aria-current="page" class="ativo">FAQ</a></li>
+        </ul>
+    </nav>
+    <button class="botao botao-principal sair">
+        <a href="jornada.html">
+            COMEÇAR A JORNADA
+        </a>
+    </button>
+    <button class="botao mobile" id="btn" onclick="abrirMenu()" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+        <i data-lucide="menu" id="menu-icon"></i>
+    </button>
+</header>
+
+<main>
+    <nav class="navbar-lateral" id="menu">
+        <ul class="menu-lateral">
+            <li class="nav-item"><a href="index.html">Início</a></li>
+            <li class="nav-item"><a href="digitalizar.html">Por que digitalizar?</a></li>
+            <li class="nav-item"><a href="jornada.html">Jornada</a></li>
+            <li class="nav-item"><a href="solucoes.html">Soluções</a></li>
+            <li class="nav-item"><a href="historia.html">Histórias</a></li>
+            <li class="nav-item"><a href="kitDigital.html">Kit Digital</a></li>
+            <li class="nav-item"><a href="contato.html">Contacto</a></li>
+            <li class="nav-item"><a href="faq.html" aria-current="page">FAQ</a></li>
+        </ul>
+    </nav>
+    
+
+    <!-- TOPO -->
+    <section class="faq-topo">
+        <div class="faq-topo-in">
+            <p class="faq-pre">Perguntas frequentes</p>
+            <h1>Dúvidas? <span>Comece aqui.</span></h1>
+            <label class="faq-busca">
+                <i data-lucide="search"></i>
+                <input type="search" id="faq-busca" placeholder="Pesquisar perguntas" aria-label="Pesquisar nas perguntas">
+            </label>
+        </div>
+    </section>
+
+    <!-- PERGUNTAS -->
+    <section class="faq-corpo">
+        <div class="faq-grid">
+
+            <nav class="faq-cats" aria-label="Categorias">
+                <button type="button" data-cat="todas" aria-pressed="true"><i data-lucide="layout-grid"></i>Todas</button>
+                <button type="button" data-cat="comecar" aria-pressed="false"><i data-lucide="rocket"></i>Começar</button>
+                <button type="button" data-cat="custos" aria-pressed="false"><i data-lucide="wallet"></i>Custos</button>
+                <button type="button" data-cat="ferramentas" aria-pressed="false"><i data-lucide="smartphone"></i>Ferramentas</button>
+                <button type="button" data-cat="seguranca" aria-pressed="false"><i data-lucide="shield-check"></i>Segurança</button>
+            </nav>
+
+            <div class="faq-lista" id="faq-lista">
+               
+
+                <details class="faq-item" data-cat="comecar" open>
+                    <summary>Preciso de saber de tecnologia para começar?</summary>
+                    <p>Não. Comece com uma ferramenta simples, como o WhatsApp Business ou uma folha de cálculo, e aprenda à medida que a usa.</p>
+                </details>
+
+                <details class="faq-item" data-cat="comecar">
+                    <summary>Por onde devo começar?</summary>
+                    <p>Pelo que mais pesa hoje: ser encontrado, mostrar os produtos ou organizar as vendas. A <a href="jornada.html">Jornada</a> mostra uma ordem possível.</p>
+                </details>
+
+                <details class="faq-item" data-cat="comecar">
+                    <summary>Preciso de computador?</summary>
+                    <p>Nem sempre. Muitas ferramentas, como catálogos, mapas e conversas com clientes, funcionam só com o telemóvel.</p>
+                </details>
+
+                <details class="faq-item" data-cat="custos">
+                    <summary>Quanto custa ter um site?</summary>
+                    <p>Depende da solução. Há opções gratuitas, mas um domínio próprio e o alojamento costumam ter custo anual. Compare as opções antes de decidir.</p>
+                </details>
+
+                <details class="faq-item" data-cat="custos">
+                    <summary>Existem ferramentas gratuitas?</summary>
+                    <p>Sim. O WhatsApp Business, o perfil de empresa no Google e as folhas de cálculo têm versões gratuitas. As condições podem mudar, por isso confirme no site de cada serviço.</p>
+                </details>
+
+                <details class="faq-item" data-cat="custos">
+                    <summary>Preciso de muita internet?</summary>
+                    <p>Não, mas convém planear. Páginas leves e imagens pequenas gastam menos dados, tanto para si como para os seus clientes.</p>
+                </details>
+
+                <details class="faq-item" data-cat="ferramentas">
+                    <summary>Site ou página numa rede social?</summary>
+                    <p>A rede social é rápida de criar. O site dá mais controlo e pode aparecer nas pesquisas. Muitos negócios usam os dois.</p>
+                </details>
+
+                <details class="faq-item" data-cat="ferramentas">
+                    <summary>Posso receber por M-Pesa e e-Mola?</summary>
+                    <p>Pode indicar o seu número como forma de pagamento aos clientes. As condições dependem de cada operador, por isso confirme com ele.</p>
+                </details>
+
+                <details class="faq-item" data-cat="ferramentas">
+                    <summary>Preciso mesmo de uma app de gestão?</summary>
+                    <p>Nem sempre. Com poucos produtos, uma folha de cálculo pode chegar. Uma app faz sentido quando as vendas e o stock começam a ser difíceis de acompanhar.</p>
+                </details>
+
+                <details class="faq-item" data-cat="seguranca">
+                    <summary>Como proteger os dados dos clientes?</summary>
+                    <p>Use palavras-passe diferentes para cada serviço, active a verificação em dois passos e guarde só a informação de que precisa.</p>
+                </details>
+
+                <details class="faq-item" data-cat="seguranca">
+                    <summary>E se perder o telemóvel?</summary>
+                    <p>Bloqueie o ecrã com código e mantenha uma cópia dos registos importantes noutro local, para os recuperar noutro aparelho.</p>
+                </details>
+
+                <details class="faq-item" data-cat="seguranca">
+                    <summary>Quem deve ter acesso às contas do negócio?</summary>
+                    <p>Só quem precisa. Sempre que possível, dê a cada pessoa o seu próprio acesso, em vez de partilhar a mesma palavra-passe.</p>
+                </details>
+
+                <p class="faq-vazio" id="faq-vazio" hidden>Não encontrámos nenhuma pergunta com essa pesquisa. Experimente outra palavra ou escreva-nos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- AJUDA -->
+    <section class="faq-ajuda">
+        <div class="faq-ajuda-in">
+            <div>
+                <h2>Não encontrou a resposta?</h2>
+                <p>Escreva-nos e ajudamos a perceber por onde começar.</p>
+            </div>
+             <button class="botao botao-secundarioI sair">
+                <a href="contato.html">
+                    Fale comigo <i data-lucide="arrow-right"></i>
+                </a>
+            </button>
+           
+        </div>
+    </section>
+</main>
+
+<footer class="fundo-sim">
+    <div class="footer-conteudo">
+        <div class="footer-grelha">
+            <div class="logo-footer">
+                <a href="index.html" class="logo">Ponto <span class="ponto">digital</span></a>
+                
+                <p>Tecnologia mais simples para pequenos negócios em Moçambique.</p>
+            </div>
+            <div class="redes-sociais">
+                <h3>PLATAFORMA</h3>
+                <nav><ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="digitalizar.html">Por que digitalizar</a></li>
+                    <li><a href="jornada.html">Jornada</a></li>
+                </ul></nav>
+            </div>
+            <div class="recursos">
+                <h3>RECURSOS</h3>
+                <nav><ul>
+                    <li><a href="solucoes.html">Soluções</a></li>
+                    <li><a href="historia.html">Histórias</a></li>
+                    <li><a href="kitDigital.html">Kit Digital</a></li>
+                </ul></nav>
+            </div>
+            <div class="ajuda">
+                <h3>AJUDA</h3>
+                <nav><ul>
+                    <li><a href="faq.html">Perguntas frequentes</a></li>
+                    <li><a href="contato.html">Contacto</a></li>
+                </ul></nav>
+            </div>
+        </div>
+        <div class="footer-final">
+            <p>&copy; 2026 Ponto Digital. Tecnologia mais simples para pequenos negócios em Moçambique.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="../js/index.js"></script>
+<script src="../js/faq.js"></script>
+
+<script>
+    lucide.createIcons();
+</script>
+
+</body>
+</html>

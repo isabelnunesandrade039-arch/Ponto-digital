@@ -1,0 +1,681 @@
+.dig-hero {
+    background-image:
+        linear-gradient(rgba(26, 25, 25, 0.75), rgba(66, 65, 65, 0.55)),
+        url("../../img/por_que_digitalizar/hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin-bottom: var(--espaco-secao-y-desktop); */
+    color: var( --cor-texto-fundescuro);
+    flex-wrap: wrap;
+}
+.dig-hero h1{
+    font-size: var(--texto-4xl);
+    font-weight: var( --weight-semibold);
+    font-family: var(--font-titulo);
+    max-width: 25ch;
+    text-align: center;
+   
+}
+.desafios{
+    background:linear-gradient(to top,var( --cor-branco) 20%,var(--cor-principal) 20%);
+   
+}
+.desafios-titulo,
+.motivos-titulo,
+.dig-titulo{
+    font-size: var(--texto-xl) !important;
+    font-weight: var( --weight-semibold);
+    font-family: var(--font-titulo);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   padding-bottom: var(--espaco-3);
+
+}
+.desafios-titulo{
+    color: var(--cor-texto-fundescuro);
+
+
+}
+.dig-conteudo,.mot-conteudo{
+    text-align: center;
+    padding-top: var(--espaco-secao-y-desktop);
+   
+}
+.dig-conteudo p,.mot-conteudo p{
+    width: 700px;
+    max-width: 100%;
+    text-align: center;
+    display: inline-block;
+    font-size: var( --leading-loose) !important;
+    font-weight: var( --weight-medio);
+    padding-bottom: var(--espaco-10);
+   
+}
+.dig-conteudo p{
+    color: var( --cor-azulCinzento);
+
+
+}
+
+.desafios-grupo-cards{
+    display: flex;
+    margin-bottom: var(--espaco-10);
+    gap: var(--espaco-5);
+    
+}
+
+.desa-card{
+     position: relative;
+
+}
+.desa-card:not(:first-child){
+    padding-left: var(--espaco-8);
+}
+
+
+.desa-card:nth-child(2)::before,
+.desa-card:nth-child(3)::before{
+    content: " ";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    left: 0;
+    background-color: rgba(71, 71, 71, 0.5);
+    display: block; 
+    
+}
+.desa-card svg {
+    background-color: var(--cor-azul-claro);
+    padding: var(--espaco-2);
+    border-radius: 100%;
+    color: var(--cor-principal);
+    box-sizing: content-box;
+    margin-bottom: var(--espaco-1);
+}
+.desa-card  h3,
+.antes-depois-conteiner h3{
+     font-size: var( --leading-normal) !important;
+    font-weight: var( --weight-semibold);
+    font-family: var(--font-titulo);
+    margin-bottom: var(--espaco-1);
+
+}
+.desa-card  h3{
+    color: #adc1d8;
+
+}
+.desa-imagem{
+    padding: var(--espaco-3);
+     background-color: #fcfcfc; 
+     overflow: hidden;
+     
+     
+    
+}
+.desa-imagem img{
+    width: 100%;
+    height: 500px;
+    box-shadow: var(--sombra-md);
+    object-fit: cover;
+    aspect-ratio: 4 / 3;
+    border-radius: var(--raio-sm);
+    
+}
+.motivos{
+    padding-bottom: var(--espaco-secao-y-desktop);
+}
+.motivos-grupo-cards {
+    display: flex;
+    flex-direction: column;
+    gap: var(--espaco-10);
+}
+
+.pares {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    padding-bottom: var(--espaco-5);
+}
+.desa-card  h3{
+     font-size: var( --leading-normal) !important;
+    font-weight: var( --weight-semibold);
+    font-family: var(--font-titulo);
+    margin-bottom: var(--espaco-2);
+
+}
+
+.motivos-imagem {
+    width: 60%;
+    height: 300px;
+    flex-shrink: 0;
+}
+
+.motivos-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: var(--raio-sm);
+
+}
+
+.motivos-card {
+    width: 45%;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+    background-color: var(--cor-body);
+    padding: var(--espaco-12);
+    margin: 0;
+    border-radius: var(--raio-sm);
+   
+}
+
+/* Primeiro e terceiro cartões:
+   conteúdo à esquerda da imagem */
+.pares:nth-child(odd) .motivos-card {
+    margin-right: -5%;
+    border-left: 3px solid var(--cor-principal);
+}
+
+/* Segundo e quarto cartões:
+   conteúdo à direita da imagem */
+.pares:nth-child(even) .motivos-card {
+    margin-left: -5%;
+    border-right: 2px solid var(--cor-principal);
+
+}
+.antes-depois-fundo{
+    background-color: #ecf0f5;
+    padding: var(--espaco-10) 0;
+
+}
+.antes-depois-conteiner{
+    padding: var(--espaco-8) 0;
+    display: flex;
+    gap: var(--espaco-8);
+    flex-wrap: wrap;
+}
+.dig-antes ul,
+.dig-depois ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.dig-depois-cont{
+    border: 1px solid rgba(66, 65, 65, 0.55);
+    border-radius: var(--raio-sm);
+    box-shadow: var(--sombra-md);
+    padding: var(--espaco-4);
+    background-color: #fcfcfc;
+    /* background: rgba(66, 65, 65, 0.55); */
+}
+
+.dig-antes li,
+.dig-depois li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    line-height: 1.5;
+}
+
+.dig-antes li svg,
+.dig-depois li svg {
+    flex-shrink: 0;          /* impede o ícone de encolher em textos longos */
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+.antes-depois-conteiner h3{
+    padding-bottom: var(--espaco-3);
+}
+/* Sem apoio digital: tom avermelhado/neutro */
+.dig-antes li svg {
+    background-color: #f8dedb;
+    color: #c0392b;
+}
+
+/* Com apoio digital: tom verde */
+.dig-depois li svg {
+    background-color: #e6f6ec;
+    color: #1e8e4e;
+}
+
+.dig-antes li span,
+.dig-depois li span {
+    padding-top: 0.5rem;     /* alinha o texto com o centro do ícone */
+}
+
+.dezzafios {
+    background-image:
+        linear-gradient(rgba(10, 15, 25, 0.82), rgba(10, 15, 25, 0.9)),
+        url("../../img/por_que_digitalizar/custos_recursos.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;   /* efeito parallax; remove se der problemas no telemóvel */
+    padding: 5rem 1.5rem;
+    color: #fff;
+}
+
+.dezzafios-titulo {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 3rem;
+}
+
+.dezzafios-grupo-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.dezzafios-card {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.dezzafios-card:hover {
+    transform: translateY(-6px);
+    background-color: rgba(255, 255, 255, 0.14);
+}
+
+.dezzafios-card svg {
+    width: 56px;
+    height: 56px;
+    padding: 14px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: var(--cor-laranja);
+    color: #fff;
+    flex-shrink: 0;
+}
+
+.dezzafios-card h3 {
+    color: #fff;
+    margin: 0;
+}
+
+.dezzafios-card p {
+    color: rgba(255, 255, 255, 0.82);
+    line-height: 1.6;
+    margin: 0;
+}
+.fim {
+    padding: 5rem 1.5rem;
+    text-align: center;
+}
+
+.fim-conteudo {
+    max-width: 760px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.fim-titulo {
+    font-size: clamp(1.75rem, 4vw, 2.75rem);
+    line-height: 1.2;
+    margin: 0;
+}
+
+.fim-texto {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    max-width: 60ch;
+    margin: 0;
+}
+
+.fim-botao {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.9rem 2rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fim-botao:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+
+/* ========== Tablet ========== */
+@media (max-width: 900px) {
+    .desafios-grupo-cards {
+        flex-wrap: wrap;
+    }
+
+    .desa-card {
+        flex: 1 1 260px;
+    }
+
+    .antes-depois-conteiner {
+        flex-direction: column;
+    }
+
+    .dig-antes-cont,
+    .dig-depois-cont {
+        width: 100%;
+    }
+
+    .motivos-card {
+        padding: var(--espaco-8);
+    }
+}
+
+/* ========== Telemóvel ========== */
+@media (max-width: 750px) {
+
+    /* Desafios: cards empilhados, sem divisória vertical */
+    .desafios-grupo-cards {
+        flex-direction: column;
+        gap: var(--espaco-6);
+    }
+
+    .desa-card:not(:first-child) {
+        padding-left: 0;
+        padding-top: var(--espaco-6);
+        border-top: 1px solid rgba(71, 71, 71, 0.3);
+    }
+
+    .desa-card:nth-child(2)::before,
+    .desa-card:nth-child(3)::before {
+        display: none;
+    }
+
+    .dig-conteudo p,
+    .mot-conteudo p {
+        width: 100%;
+        padding-bottom: var(--espaco-6);
+    }
+
+    /* Motivos: imagem em cima, cartão por baixo */
+    .motivos-grupo-cards {
+        gap: var(--espaco-8);
+    }
+
+    .pares {
+        flex-direction: column;
+        align-items: stretch;
+        padding-bottom: 0;
+    }
+
+    .motivos-imagem {
+        width: 100%;
+        height: 220px;
+    }
+
+    .motivos-card,
+    .pares:nth-child(odd) .motivos-card,
+    .pares:nth-child(even) .motivos-card {
+        width: 100%;
+        margin: calc(var(--espaco-5) * -1) 0 0 0; /* sobrepõe um pouco a imagem */
+        padding: var(--espaco-5);
+        border-left: 3px solid var(--cor-principal);
+        border-right: none;
+    }
+
+    /* Antes / depois */
+    .antes-depois-conteiner {
+        gap: var(--espaco-5);
+        padding: var(--espaco-5) 0;
+    }
+
+    /* Desafios escuros: parallax não funciona bem em mobile */
+    .dezzafios {
+        background-attachment: scroll;
+        padding: 3rem 1rem;
+    }
+
+    .dezzafios-titulo {
+        margin-bottom: 2rem;
+    }
+
+    /* Secção final */
+    .fim {
+        padding: 3rem 1rem;
+    }
+
+    .fim-botao {
+        width: 100%;
+    }
+}
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+.dig-hero {
+    position: relative;
+}
+
+.dig-hero h1 {
+    opacity: calc(1 - var(--sumir, 0));
+    transform: translateY(calc(var(--sumir, 0) * 70px));
+    filter: blur(calc(var(--sumir, 0) * 6px));
+}
+
+.dig-leitura {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--espaco-2);
+    margin-top: var(--espaco-5);
+    padding: var(--espaco-1) var(--espaco-4);
+    border: 1px solid rgba(230, 236, 242, 0.35);
+    border-radius: 999px;
+    background-color: rgba(255, 255, 255, 0.08);
+    font-size: var(--texto-xs);
+    color: var(--cor-texto-fundescuro);
+}
+
+.dig-leitura svg {
+    width: 14px;
+    height: 14px;
+}
+
+.dig-pista {
+    position: absolute;
+    left: 50%;
+    bottom: var(--espaco-6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border: 1.5px solid rgba(230, 236, 242, 0.6);
+    border-radius: 50%;
+    background: transparent;
+    color: var(--cor-texto-fundescuro);
+    cursor: pointer;
+    transform: translateX(-50%);
+    transition: opacity 0.4s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.dig-pista:hover {
+    border-color: var(--cor-laranja);
+    background-color: var(--cor-laranja);
+}
+
+.dig-pista:focus-visible {
+    outline: 3px solid var(--cor-laranja);
+    outline-offset: 3px;
+}
+
+.dig-pista.oculta {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.dig-pista svg {
+    width: 20px;
+    height: 20px;
+    animation: dig-descer 1.6s ease-in-out infinite;
+}
+
+@keyframes dig-descer {
+    0%, 100% { transform: translateY(-3px); }
+    50%      { transform: translateY(4px); }
+}
+
+.motivos-imagem {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--raio-sm);
+}
+
+.motivos-imagem::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: var(--cor-principal);
+    transform: scaleX(var(--cortina, 0));
+    transform-origin: right center;
+    pointer-events: none;
+}
+
+.pares:nth-child(even) .motivos-imagem::after {
+    transform-origin: left center;
+}
+
+.dig-antes li span,
+.dig-depois li span {
+    transition: opacity 0.4s ease;
+}
+
+.dig-antes li.riscado span {
+    opacity: 0.5;
+    text-decoration: line-through;
+    text-decoration-color: rgba(192, 57, 43, 0.7);
+}
+
+.dig-antes li.riscado svg {
+    opacity: 0.5;
+}
+
+.dezzafios-card {
+    background-image: radial-gradient(260px circle at var(--mx, 50%) var(--my, 50%), rgba(255, 255, 255, var(--brilho, 0)), transparent 70%);
+}
+
+.dezzafios-card:hover {
+    --brilho: 0.16;
+}
+
+.fim-botao {
+    transform: translate(var(--ix, 0px), var(--iy, 0px));
+}
+
+.fim-botao:hover {
+    transform: translate(var(--ix, 0px), calc(var(--iy, 0px) - 3px));
+}
+
+.dig-progresso {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1100;
+    width: 100%;
+    height: 3px;
+    background-color: var(--cor-laranja);
+    transform: scaleX(0);
+    transform-origin: left center;
+    pointer-events: none;
+}
+
+.dig-topo {
+    position: fixed;
+    right: var(--espaco-5);
+    bottom: var(--espaco-5);
+    z-index: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--cor-principal);
+    color: var(--cor-branco);
+    box-shadow: var(--sombra-md);
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(12px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease, background-color 0.3s ease;
+}
+
+.dig-topo.visivel {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+}
+
+.dig-topo:hover {
+    background-color: var(--cor-laranja);
+}
+
+.dig-topo:focus-visible {
+    outline: 3px solid var(--cor-laranja);
+    outline-offset: 3px;
+}
+
+.dig-topo svg {
+    width: 22px;
+    height: 22px;
+}
+
+@media (max-width: 750px) {
+    .dig-topo {
+        right: var(--espaco-4);
+        bottom: var(--espaco-4);
+        width: 44px;
+        height: 44px;
+    }
+
+    .dig-pista {
+        bottom: var(--espaco-4);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .dig-pista svg {
+        animation: none;
+    }
+
+    .dig-topo,
+    .dig-pista,
+    .dig-antes li span,
+    .dig-depois li span {
+        transition: none;
+    }
+}

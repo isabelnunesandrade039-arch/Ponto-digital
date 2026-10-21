@@ -1,0 +1,311 @@
+.solucao-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 520px;
+    margin-bottom: var(--espaco-secao-y-desktop);
+    padding: calc(var(--altura-cabecalho, 64px) + var(--espaco-10)) 5% var(--espaco-10);
+    background-image:
+        linear-gradient(rgba(26, 25, 25, 0.75), rgba(66, 65, 65, 0.55)),
+        url("../../img/solucoes/solHero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--cor-texto-fundescuro);
+    text-align: center;
+}
+
+.sol-titulo {
+    max-width: 22ch;
+    font-family: var(--font-titulo);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: var(--weight-bold);
+    line-height: var(--leading-tight);
+    color: #f3f4f7;
+}
+
+.sites {
+    padding: var(--espaco-16) 0;
+}
+
+.sites-conteiner {
+    display: flex;
+    align-items: center;
+    gap: var(--espaco-12);
+    margin-bottom: var(--espaco-secao-y-desktop);
+}
+
+.sites-conteiner > * {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.sites-titulo,
+.soft-titulo,
+.solucoes-titulo {
+    font-family: var(--font-titulo);
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
+    font-weight: var(--weight-bold);
+    line-height: var(--leading-tight);
+}
+
+.sites-titulo {
+    padding: var(--espaco-2) 0;
+    text-align: start;
+}
+
+.sites-texto,
+.soft-texto {
+    max-width: 500px;
+    font-size: var(--texto-lg);
+    font-weight: var(--weight-medio);
+    line-height: var(--leading-normal);
+}
+
+.site-imagem img {
+    display: block;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: var(--raio-md);
+    box-shadow: var(--sombra-md);
+}
+
+.software-fundo {
+    margin-bottom: var(--espaco-secao-y-desktop);
+    background: linear-gradient(to right, var(--cor-branco) 30%, var(--cor-principal) 30%);
+}
+
+.soft-conteiner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: var(--espaco-12);
+}
+
+.soft {
+    padding: var(--espaco-10) 0;
+}
+
+.soft-titulo {
+    padding: var(--espaco-2) 0;
+    text-align: start;
+    color: var(--cor-texto-fundescuro);
+}
+
+.soft-texto {
+    color: var(--cor-azulCinzento);
+}
+
+.soft-imagem img {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: var(--raio-md);
+    box-shadow: var(--sombra-lg);
+}
+
+.solucoes-fundo {
+    padding: var(--espaco-secao-y-desktop) 8%;
+    background-color: #ecf0f5;
+}
+
+.solucoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.solucoes-titulo {
+    padding-bottom: var(--espaco-5);
+    text-align: center;
+}
+
+.solucoes-texto {
+    width: 100%;
+    max-width: 700px;
+    padding-bottom: var(--espaco-10);
+    font-size: var(--texto-lg);
+    font-weight: var(--weight-medio);
+    line-height: var(--leading-normal);
+    text-align: center;
+}
+
+.sol-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
+    gap: var(--espaco-6);
+    width: 100%;
+}
+
+.sol-card {
+    display: flex;
+    flex-direction: column;
+    padding: var(--espaco-6) var(--espaco-8);
+    border-radius: var(--raio-md);
+    background-color: var(--cor-branco);
+    box-shadow: var(--sombra-sm);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sol-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--sombra-lg);
+}
+
+.sol-card > span {
+    font-size: var(--text-sm);
+    font-weight: var(--weight-medio);
+    color: var(--cor-azul-claro);
+}
+
+.sol-dec {
+    flex: 1;
+    padding-bottom: var(--espaco-8);
+    border-bottom: 1px solid rgba(13, 27, 42, 0.12);
+    line-height: var(--leading-normal);
+}
+
+.sol-tipo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--espaco-3);
+    padding-top: var(--espaco-5);
+    font-size: var(--text-sm);
+}
+
+.sol-tipo p {
+    color: var(--cor-azul-claro);
+}
+
+.sol-tipo span {
+    padding: var(--espaco-2) var(--espaco-5);
+    border-radius: 999px;
+    font-weight: var(--weight-bold);
+    white-space: nowrap;
+}
+
+.site span {
+    color: #1e7a3a;
+    background-color: #dcf5e3;
+}
+
+.software span {
+    color: #a82f20;
+    background-color: #fadbd5;
+}
+
+.aplicacao span {
+    color: #5b2a99;
+    background-color: #ebdcf9;
+}
+
+@media (max-width: 1000px) {
+    .solucao-hero {
+        min-height: 440px;
+    }
+
+    .sites-conteiner {
+        flex-direction: column;
+        align-items: stretch;
+        gap: var(--espaco-8);
+    }
+
+    .site-imagem img {
+        height: 360px;
+    }
+
+    .software-fundo {
+        background: var(--cor-principal);
+    }
+
+    .soft-conteiner {
+        grid-template-columns: 1fr;
+        gap: var(--espaco-8);
+        padding: var(--espaco-10) 0;
+    }
+
+    .soft {
+        padding: 0;
+    }
+
+    .soft-imagem img {
+        max-width: 100%;
+        height: 300px;
+    }
+
+    .sol-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 750px) {
+    .solucao-hero {
+        min-height: 380px;
+        margin-bottom: var(--espaco-secao-y-telefone);
+        padding-top: calc(var(--altura-cabecalho, 56px) + var(--espaco-8));
+        padding-bottom: var(--espaco-8);
+    }
+
+    .sites {
+        padding: var(--espaco-8) 0;
+    }
+
+    .sites-conteiner {
+        margin-bottom: var(--espaco-secao-y-telefone);
+    }
+
+    .sites-texto,
+    .soft-texto,
+    .solucoes-texto {
+        font-size: var(--texto-base);
+    }
+
+    .site-imagem img {
+        height: 240px;
+    }
+
+    .software-fundo {
+        margin-bottom: var(--espaco-secao-y-telefone);
+    }
+
+    .soft-conteiner {
+        padding: var(--espaco-8) 0;
+    }
+
+    .soft-imagem img {
+        height: 220px;
+    }
+
+    .solucoes-fundo {
+        padding: var(--espaco-secao-y-telefone) 5%;
+    }
+
+    .solucoes-texto {
+        padding-bottom: var(--espaco-8);
+    }
+
+    .sol-cards {
+        grid-template-columns: 1fr;
+        gap: var(--espaco-4);
+    }
+
+    .sol-card {
+        padding: var(--espaco-5);
+    }
+
+    .sol-dec {
+        padding-bottom: var(--espaco-5);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .sol-card {
+        transition: none;
+    }
+}

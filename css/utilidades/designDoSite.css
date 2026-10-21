@@ -1,0 +1,68 @@
+:root{
+    --font-titulo:"Space Grotesk", "Inter", sans-serif;
+    --font-body: "Inter", sans-serif;
+
+    /*Tipografia*/
+  --texto-xs:   0.75rem;   
+  --text-sm:   0.875rem;  
+  --texto-base: 1rem;      
+  --texto-lg:   1.25rem;   
+  --texto-xl:   1.563rem;  
+  --texto-2xl:  1.953rem;  
+  --texto-3xl:  2.441rem;  
+  --texto-4xl:  3.052rem;  
+ --leading-tight:  1.2;   /* títulos */
+  --leading-normal: 1.5;   /* texto corrido */
+  --leading-loose:  1.75;  /* parágrafos longos */
+  
+/* ESCALA DE ESPAÇAMENTO*/
+  --espaco-1:  4px;
+  --espaco-2:  8px;
+  --espaco-3:  12px;
+  --espaco-4:  16px;
+  --espaco-5:  20px;
+  --espaco-6:  24px;
+  --espaco-8:  32px;
+  --espaco-10: 40px;
+  --espaco-12: 48px;
+  --espaco-16: 64px;
+  --espaco-20: 80px;
+  --espaco-24: 96px;
+  --weight-regular:  400;
+  --weight-medio:   500;
+  --weight-semibold: 600;
+  --weight-bold:     700;
+
+  /* Espaçamento entre secções da página */
+  --espaco-secao-y-desktop:       var(--espaco-24); 
+  --espaco-secao-y-telefone: var(--espaco-12); 
+
+  /* Cores*/
+  --cor-branco:#ffffff;
+  --cor-azulCinzento:#8a9bae;   
+  --cor-azul-claro: #5b6f8f;   
+  --cor-verde-escuro: #16424a;   
+   --cor-principal: #0d1b2a;    
+  --cor-laranja: #E8662F; 
+  --cor-ver: #f0ca4c; 
+
+  /* --cor-principal: #C2185B;  */
+  /* --cor-principal: #9C3D24;  */
+  --cor-texto-fundescuro:#E6ECF2; 
+  --cor-body:#fcfcfc;
+  --cor-texto-primaria:   var(--cor-principal);
+  --cor-texto-secondario: var(--cor-azul-claro);
+  --cor-texto-inversa:   var(--cor-branco);
+
+  /* 
+     5. RAIO DE BORDA E SOMBRA (para cards, botões, imagens)
+     */
+  --raio-sm: 6px;
+  --raio-md: 12px;
+  --raio-lg: 20px;
+
+  --sombra-sm: 0 1px 3px rgba(13, 27, 42, 0.08);
+  --sombra-md: 0 4px 12px rgba(13, 27, 42, 0.12);
+  --sombra-lg: 0 8px 24px rgba(13, 27, 42, 0.16);
+
+}

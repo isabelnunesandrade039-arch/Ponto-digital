@@ -1,0 +1,1092 @@
+/* ==========================================================
+   PÁGINA HISTÓRIAS
+   ========================================================== */
+
+/* Alinha o conteúdo a 1200px sem precisar de .container */
+.hist-hero,
+.hist-introducao,
+.hist-listagem,
+.hist-detalhe,
+.hist-aprendizagens,
+.hist-encerramento {
+    --margem-lateral: max(5%, calc((100% - 1200px) / 2));
+    padding-left: var(--margem-lateral);
+    padding-right: var(--margem-lateral);
+}
+
+/* Elementos reutilizados */
+.hist-subtitulo {
+    display: inline-block;
+    font-size: var(--text-sm);
+    font-weight: var(--weight-bold);
+    letter-spacing: 1.5px;
+    color: var(--cor-laranja);
+    margin-bottom: var(--espaco-3);
+}
+
+.hist-introducao h2,
+.hist-seccao-cabecalho h2,
+.hist-detalhe h2,
+.hist-aprendizagens h2,
+.hist-encerramento h2 {
+    font-family: var(--font-titulo);
+    font-size: var(--texto-2xl);
+    font-weight: var(--weight-semibold);
+    line-height: var(--leading-tight);
+    color: var(--cor-texto-primaria);
+}
+
+.hist-introducao p,
+.hist-seccao-cabecalho p,
+.hist-detalhe p,
+.hist-aprendizagens p,
+.hist-encerramento p {
+    font-size: var(--texto-base);
+    line-height: var(--leading-loose);
+    color: var(--cor-azul-claro);
+}
+
+/* ---------- HERO ---------- */
+.hist-hero {
+   background:  linear-gradient(rgba(29, 28, 28, 0.75), rgba(44, 44, 44, 0.55)),
+        url("../../img/historia/hero.jpg");
+    /* background: url("../../img/solucoes/solHero.jpg"); */
+     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var( --cor-texto-fundescuro);
+    flex-wrap: wrap;
+   
+    
+    
+}
+
+.hist-hero-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--espaco-3);
+   
+}
+.hist-hero-conteudo h1{
+    width: 20ch;
+    display: inline-block;
+}
+
+
+.hist-etiqueta {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--espaco-2);
+    padding: var(--espaco-2) var(--espaco-4);
+    border: 1px solid rgba(230, 236, 242, 0.25);
+    border-radius: 999px;
+    background-color: rgba(255, 255, 255, 0.06);
+    font-size: var(--texto-xs);
+    font-weight: var(--weight-semibold);
+    letter-spacing: 1.2px;
+}
+
+
+
+.hist-hero h1 {
+    font-family: var(--font-titulo);
+    font-size: var(--texto-3xl);
+    font-weight: var(--weight-bold);
+    line-height: var(--leading-tight);
+    max-width: 20ch;
+    text-align: center;
+}
+
+.hist-hero h1 span {
+    display: block;
+    color: var(--cor-laranja);
+}
+
+.hist-hero-conteudo p {
+    max-width: 52ch;
+    font-size: var(--texto-lg);
+    line-height: var(--leading-loose);
+    color: var(--cor-azulCinzento);
+}
+
+.hist-link-principal {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--espaco-2);
+    padding: var(--espaco-3) var(--espaco-6);
+    border-radius: 999px;
+    background-color: var(--cor-laranja);
+    color: var(--cor-branco);
+    font-weight: var(--weight-semibold);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hist-link-principal svg {
+    width: 18px;
+    height: 18px;
+    transition: transform 0.3s ease;
+}
+
+.hist-link-principal:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(232, 102, 47, 0.35);
+}
+
+.hist-link-principal:hover svg {
+    transform: translateY(3px);
+}
+
+.hist-hero-imagem {
+    position: relative;
+}
+
+.hist-hero-imagem img {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    border-radius: var(--raio-lg);
+    box-shadow: var(--sombra-lg);
+}
+
+.hist-legenda-imagem {
+    position: absolute;
+    left: var(--espaco-5);
+    right: var(--espaco-5);
+    bottom: var(--espaco-5);
+    display: flex;
+    align-items: center;
+    gap: var(--espaco-3);
+    padding: var(--espaco-3) var(--espaco-4);
+    border-radius: var(--raio-md);
+    background-color: rgba(13, 27, 42, 0.78);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    font-size: var(--text-sm);
+    color: var(--cor-texto-fundescuro);
+}
+
+.hist-legenda-imagem svg {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: var(--cor-laranja);
+    color: var(--cor-branco);
+}
+
+/* ---------- INTRODUÇÃO ---------- */
+.hist-introducao {
+    display: grid;
+    /* grid-template-columns: 1fr; */
+    align-items: center;
+    padding-top: var(--espaco-secao-y-desktop);
+     padding-bottom: var(--espaco-secao-y-desktop); 
+    background-color: var(--cor-body);
+}
+.hist-intro-titulo h2{
+    text-align: start;
+    padding-bottom: 10px;
+    
+
+}
+
+.hist-intro-texto {
+    display: flex;
+    flex-direction: column;
+   
+    
+}
+
+/* ---------- LISTAGEM DE CARDS ---------- */
+.hist-listagem {
+    /* padding-top: var(--espaco-secao-y-desktop); */
+    /* padding-bottom: var(--espaco-secao-y-desktop); */
+    background-color: #ecf0f5;
+}
+
+.hist-seccao-cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    /* gap: var(--espaco-8); */
+    margin-bottom: var(--espaco-12);
+}
+
+.hist-seccao-cabecalho p {
+    max-width: 38ch;
+}
+
+/* ---------- HISTÓRIAS EM DESTAQUE ---------- */
+.hist-listagem {
+    background-color: var(--cor-body);
+}
+
+.hist-grelha {
+    display: grid;
+    grid-template-columns: 1.25fr 1fr;
+    grid-template-rows: repeat(2, minmax(280px, auto));
+    gap: var(--espaco-6);
+}
+
+/* Cartão base (os dois pequenos, em horizontal) */
+.hist-card {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    border: 1px solid rgba(13, 27, 42, 0.12);
+    border-radius: var(--raio-md);
+    background-color: var(--cor-branco);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.hist-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--sombra-lg);
+}
+
+/* Fundo escuro que sobe ao passar o rato */
+.hist-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-color: var(--cor-principal);
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.5s cubic-bezier(0.7, 0, 0.2, 1);
+    pointer-events: none;
+}
+
+.hist-card:hover::before {
+    transform: scaleY(1);
+}
+
+/* Imagem */
+.hist-card-imagem {
+    position: relative;
+    display: block;
+    height: 100%;
+    overflow: hidden;
+}
+
+.hist-card-imagem img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(1) contrast(1.05);
+    transition: filter 0.5s ease, transform 0.6s ease;
+}
+
+.hist-card:hover .hist-card-imagem img {
+    filter: grayscale(0);
+    transform: scale(1.06);
+}
+
+/* Número em contorno */
+.hist-numero {
+    position: absolute;
+    top: var(--espaco-3);
+    left: var(--espaco-4);
+    font-family: var(--font-titulo);
+    font-size: var(--texto-3xl);
+    font-weight: var(--weight-bold);
+    line-height: 1;
+    color: transparent;
+    -webkit-text-stroke: 1.5px var(--cor-branco);
+    transition: color 0.4s ease, -webkit-text-stroke-color 0.4s ease;
+}
+
+.hist-card:hover .hist-numero {
+    color: var(--cor-laranja);
+    -webkit-text-stroke-color: var(--cor-laranja);
+}
+
+/* Conteúdo */
+.hist-card-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: var(--espaco-3);
+    padding: var(--espaco-8);
+}
+
+.hist-card h3 {
+    font-family: var(--font-titulo);
+    font-size: var(--texto-lg);
+    font-weight: var(--weight-semibold);
+    line-height: var(--leading-tight);
+    color: var(--cor-texto-primaria);
+    transition: color 0.4s ease;
+}
+
+.hist-card-conteudo p {
+    font-size: var(--text-sm);
+    line-height: var(--leading-normal);
+    color: var(--cor-azul-claro);
+    transition: color 0.4s ease;
+}
+
+.hist-card:hover h3 {
+    color: var(--cor-texto-fundescuro);
+}
+
+.hist-card:hover .hist-card-conteudo p {
+    color: var(--cor-azulCinzento);
+}
+
+/* "Ler história" com linha que cresce */
+.hist-link {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: var(--espaco-2);
+    padding-bottom: var(--espaco-1);
+    font-weight: var(--weight-semibold);
+    color: var(--cor-principal);
+    transition: color 0.4s ease, gap 0.3s ease;
+}
+
+.hist-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 30%;
+    height: 2px;
+    background-color: var(--cor-laranja);
+    transition: width 0.4s ease;
+}
+
+.hist-link svg {
+    width: 18px;
+    height: 18px;
+}
+
+.hist-card:hover .hist-link {
+    color: var(--cor-branco);
+    gap: var(--espaco-3);
+}
+
+.hist-link:hover::after {
+    width: 100%;
+}
+
+/* ---------- CARTÃO EM DESTAQUE (1.ª história) ---------- */
+.hist-card:first-child {
+    grid-row: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: none;
+}
+
+.hist-card:first-child .hist-card-imagem {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+}
+
+/* Degradê permanente para o texto se ler sobre a foto */
+.hist-card:first-child::before {
+    z-index: -1;
+    transform: none;
+    background: linear-gradient(to top,
+        rgba(13, 27, 42, 0.96) 25%,
+        rgba(13, 27, 42, 0.35) 100%);
+}
+
+.hist-card:first-child .hist-numero {
+    top: var(--espaco-6);
+    left: var(--espaco-8);
+    font-size: var(--texto-4xl);
+    z-index: 1;
+}
+
+.hist-card:first-child .hist-card-conteudo {
+    justify-content: flex-end;
+    max-width: 52ch;
+    padding: var(--espaco-10);
+    pointer-events: none;   /* deixa o clique passar para a imagem */
+}
+
+.hist-card:first-child .hist-link {
+    pointer-events: auto;   /* mas o "Ler história" continua clicável */
+}
+
+.hist-card:first-child h3 {
+    font-size: var(--texto-2xl);
+    color: var(--cor-texto-fundescuro);
+}
+
+.hist-card:first-child .hist-card-conteudo p {
+    color: var(--cor-azulCinzento);
+}
+
+.hist-card:first-child .hist-link {
+    color: var(--cor-branco);
+}
+.hist-encerramento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--espaco-5);
+    padding-top: var(--espaco-secao-y-desktop);
+    padding-bottom: var(--espaco-secao-y-desktop);
+    background-color: var(--cor-body);
+    text-align: center;
+}
+/* ---------- APRENDIZAGENS FINAIS ---------- */
+.hist-aprendizagens {
+    padding-top: var(--espaco-secao-y-desktop);
+    padding-bottom: var(--espaco-secao-y-desktop);
+    background-color: var(--cor-principal);
+    color: var(--cor-texto-fundescuro);
+}
+
+.hist-aprendizagens-cabecalho {
+    max-width: 720px;
+    margin: 0 auto var(--espaco-12);
+    text-align: center;
+}
+
+.hist-aprendizagens h2 {
+    color: var(--cor-texto-fundescuro);
+    margin-bottom: var(--espaco-4);
+}
+
+.hist-aprendizagens-cabecalho p {
+    color: var(--cor-azulCinzento);
+}
+
+.hist-aprendizagens-grelha {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: var(--espaco-6);
+}
+
+.hist-aprendizagem-card {
+    padding: var(--espaco-8) var(--espaco-6);
+    border: 1px solid rgba(230, 236, 242, 0.15);
+    border-radius: var(--raio-md);
+    background-color: rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.hist-aprendizagem-card:hover {
+    transform: translateY(-6px);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.hist-icone {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    margin-bottom: var(--espaco-4);
+    border-radius: 50%;
+    background-color: var(--cor-laranja);
+    color: var(--cor-branco);
+}
+
+.hist-icone svg {
+    width: 26px;
+    height: 26px;
+}
+
+.hist-aprendizagem-card h3 {
+    margin-bottom: var(--espaco-2);
+    font-family: var(--font-titulo);
+    font-size: var(--texto-lg);
+    font-weight: var(--weight-semibold);
+    color: var(--cor-texto-fundescuro);
+}
+
+.hist-aprendizagem-card p {
+    font-size: var(--text-sm);
+    line-height: var(--leading-normal);
+    color: var(--cor-azulCinzento);
+}
+.hist-encerramento-icone {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-color: #ecf0f5;
+    color: var(--cor-laranja);
+}
+
+.hist-encerramento-icone svg {
+    width: 34px;
+    height: 34px;
+}
+
+.hist-encerramento h2 {
+    max-width: 22ch;
+    font-size: var(--texto-3xl);
+}
+
+.hist-encerramento p {
+    max-width: 56ch;
+}
+
+.hist-botao {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--espaco-2);
+    padding: var(--espaco-4) var(--espaco-8);
+    border-radius: 999px;
+    background-color: var(--cor-principal);
+    color: var(--cor-texto-fundescuro);
+    font-weight: var(--weight-semibold);
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hist-botao svg {
+    width: 18px;
+    height: 18px;
+    transition: transform 0.3s ease;
+}
+
+.hist-botao:hover {
+    background-color: var(--cor-laranja);
+    transform: translateY(-3px);
+    box-shadow: var(--sombra-md);
+}
+
+.hist-botao:hover svg {
+    transform: translateX(4px);
+}
+
+/* Em ecrãs de toque não há hover: mostra as fotos a cores */
+@media (hover: none) {
+    .hist-card-imagem img {
+        filter: none;
+    }
+}
+
+/* ---------- HISTÓRIAS DETALHADAS ---------- */
+.hist-detalhe {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: start;
+    padding-top: var(--espaco-secao-y-desktop);
+    padding-bottom: var(--espaco-secao-y-desktop);
+    background-color: var(--cor-branco);
+    scroll-margin-top: var(--altura-cabecalho, 64px);
+    overflow: hidden;
+}
+
+/* Número gigante e discreto ao fundo */
+.hist-fundo-numero {
+    position: absolute;
+    z-index: 0;
+    top: var(--espaco-4);
+    right: 5%;
+    font-family: var(--font-titulo);
+    font-weight: var(--weight-bold);
+    font-size: clamp(10rem, 24vw, 22rem);
+    line-height: 1;
+    color: rgba(13, 27, 42, 0.05);
+    pointer-events: none;
+    user-select: none;
+}
+
+.hist-detalhe-invertido .hist-fundo-numero {
+    right: auto;
+    left: 5%;
+}
+
+/* Imagem + bloco de cor deslocado */
+.hist-detalhe-imagem {
+    position: relative;
+    grid-column: 1 / 8;
+    grid-row: 1;
+    z-index: 1;
+}
+
+.hist-detalhe-imagem::before {
+    content: "";
+    position: absolute;
+    left: calc(var(--espaco-8) * -1);
+    bottom: calc(var(--espaco-10) * -1);
+    width: 45%;
+    height: 75%;
+    background-color: var(--cor-laranja);
+    z-index: -1;
+}
+
+.hist-detalhe-imagem img {
+    display: block;
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    box-shadow: var(--sombra-md);
+}
+
+/* Cartão branco que sobrepõe a imagem */
+.hist-detalhe-conteudo {
+    position: relative;
+    z-index: 2;
+    grid-column: 6 / 13;
+    grid-row: 1;
+    align-self: end;
+    margin-top: var(--espaco-20);   /* o cartão começa mais abaixo que a imagem */
+    padding: var(--espaco-12);
+    background-color: var(--cor-branco);
+    box-shadow: var(--sombra-lg);
+}
+
+/* Versão invertida: imagem à direita, cartão à esquerda */
+.hist-detalhe-invertido .hist-detalhe-imagem {
+    grid-column: 6 / 13;
+}
+
+.hist-detalhe-invertido .hist-detalhe-imagem::before {
+    left: auto;
+    bottom: auto;
+    right: calc(var(--espaco-8) * -1);
+    top: calc(var(--espaco-10) * -1);
+}
+
+.hist-detalhe-invertido .hist-detalhe-conteudo {
+    grid-column: 1 / 8;
+}
+
+/* Texto dentro do cartão */
+.hist-detalhe-conteudo .hist-subtitulo {
+    margin-bottom: var(--espaco-2);
+    font-size: var(--texto-xs);
+}
+
+.hist-detalhe-conteudo h2 {
+    margin-bottom: var(--espaco-4);
+    font-size: var(--texto-2xl);
+}
+
+.hist-detalhe-conteudo h3 {
+    display: flex;
+    align-items: center;
+    gap: var(--espaco-3);
+    margin: var(--espaco-5) 0 var(--espaco-2);
+    font-family: var(--font-titulo);
+    font-size: var(--texto-xs);
+    font-weight: var(--weight-bold);
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: var(--cor-principal);
+}
+
+.hist-detalhe-conteudo h3::before {
+    content: "";
+    width: 24px;
+    height: 2px;
+    background-color: var(--cor-laranja);
+}
+
+/* Caixa "O que podemos aprender?" */
+.hist-aprendizagem {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--espaco-3);
+    margin-top: var(--espaco-6);
+    padding: var(--espaco-4) var(--espaco-5);
+    /* border-left: 3px solid var(--cor-laranja); */
+    background-color: #ecf0f5;
+}
+
+.hist-aprendizagem svg {
+    flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+    margin-top: 2px;
+    color: var(--cor-laranja);
+}
+
+.hist-aprendizagem p {
+    font-size: var(--text-sm);
+    line-height: var(--leading-normal);
+}
+
+.hist-aprendizagem strong {
+    display: block;
+    margin-bottom: var(--espaco-1);
+    font-family: var(--font-titulo);
+    font-size: var(--texto-base);
+    color: var(--cor-texto-primaria);
+}
+
+
+/* ==========================================================
+   RESPONSIVO
+   ========================================================== */
+
+/* Tablet */
+@media (max-width: 1000px) {
+    .hist-hero,
+    .hist-introducao
+     {
+        grid-template-columns: 1fr;
+        gap: var(--espaco-10);
+    }
+
+    .hist-hero {
+        min-height: auto;
+    }
+
+    .hist-hero h1 {
+        font-size: var(--texto-3xl);
+    }
+
+        .hist-detalhe {
+        grid-template-columns: 1fr;
+    }
+
+    .hist-detalhe-imagem,
+    .hist-detalhe-invertido .hist-detalhe-imagem {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .hist-detalhe-conteudo,
+    .hist-detalhe-invertido .hist-detalhe-conteudo {
+        grid-column: 1;
+        grid-row: 2;
+        align-self: auto;
+        margin: calc(var(--espaco-16) * -1) var(--espaco-5) 0;
+        padding: var(--espaco-8) var(--espaco-6);
+    }
+
+    .hist-detalhe-imagem img {
+        height: 360px;
+    }
+
+    .hist-seccao-cabecalho {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .hist-grelha {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .hist-card:first-child {
+        grid-row: auto;
+        min-height: 440px;
+    }
+}
+
+/* Telemóvel */
+@media (max-width: 750px) {
+    .hist-introducao,
+    .hist-listagem,
+    .hist-detalhe,
+    .hist-aprendizagens,
+    .hist-encerramento {
+        padding-top: var(--espaco-secao-y-telefone);
+        padding-bottom: var(--espaco-secao-y-telefone);
+    }
+
+    .hist-hero {
+        padding-top: calc(var(--altura-cabecalho, 56px) + var(--espaco-10));
+        padding-bottom: var(--espaco-10);
+    }
+
+    .hist-hero h1 {
+        font-size: var(--texto-2xl);
+    }
+
+    .hist-hero-conteudo p {
+        font-size: var(--texto-base);
+    }
+
+    .hist-hero-imagem img,
+    .hist-detalhe-imagem img {
+        height: 260px;
+    }
+
+    .hist-introducao h2,
+    .hist-seccao-cabecalho h2,
+    .hist-detalhe h2,
+    .hist-aprendizagens h2 {
+        font-size: var(--texto-xl);
+    }
+
+    .hist-encerramento h2 {
+        font-size: var(--texto-2xl);
+    }
+
+    .hist-intro-texto {
+        padding-left: var(--espaco-4);
+    }
+
+    .hist-aprendizagem {
+        flex-direction: column;
+    }
+
+    .hist-botao,
+    .hist-link-principal {
+        width: 100%;
+        justify-content: center;
+    }
+        .hist-detalhe-imagem img {
+        height: 260px;
+    }
+
+    .hist-detalhe-imagem::before {
+        left: calc(var(--espaco-3) * -1);
+        bottom: calc(var(--espaco-6) * -1);
+    }
+
+    .hist-detalhe-invertido .hist-detalhe-imagem::before {
+        left: auto;
+        bottom: auto;
+        right: calc(var(--espaco-3) * -1);
+        top: calc(var(--espaco-6) * -1);
+    }
+
+    .hist-detalhe-conteudo,
+    .hist-detalhe-invertido .hist-detalhe-conteudo {
+        margin: calc(var(--espaco-12) * -1) var(--espaco-3) 0;
+        padding: var(--espaco-6) var(--espaco-5);
+    }
+        .hist-card {
+        grid-template-columns: 1fr;
+    }
+
+    .hist-card-imagem {
+        height: 200px;
+    }
+
+    .hist-card-conteudo {
+        padding: var(--espaco-6);
+    }
+
+    .hist-card:first-child {
+        min-height: 400px;
+    }
+
+    .hist-card:first-child .hist-card-imagem {
+        height: auto;
+    }
+
+    .hist-card:first-child .hist-numero {
+        left: var(--espaco-5);
+        font-size: var(--texto-3xl);
+    }
+
+    .hist-card:first-child .hist-card-conteudo {
+        padding: var(--espaco-6);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+.hist-aprendizagens {
+    scroll-margin-top: var(--altura-cabecalho, 64px);
+}
+
+.hist-detalhe-imagem::before {
+    transform: scale(var(--bloco, 1));
+    transform-origin: left bottom;
+}
+
+.hist-detalhe-invertido .hist-detalhe-imagem::before {
+    transform-origin: right top;
+}
+
+.hist-progresso {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1100;
+    width: 100%;
+    height: 3px;
+    background-color: var(--cor-laranja);
+    transform: scaleX(0);
+    transform-origin: left center;
+    pointer-events: none;
+}
+
+.hist-topo {
+    position: fixed;
+    right: var(--espaco-5);
+    bottom: var(--espaco-5);
+    z-index: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--cor-principal);
+    color: var(--cor-branco);
+    box-shadow: var(--sombra-md);
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(12px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease, background-color 0.3s ease;
+}
+
+.hist-topo.visivel {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+}
+
+.hist-topo:hover {
+    background-color: var(--cor-laranja);
+}
+
+.hist-topo:focus-visible {
+    outline: 3px solid var(--cor-laranja);
+    outline-offset: 3px;
+}
+
+.hist-topo svg {
+    width: 22px;
+    height: 22px;
+}
+
+.hist-navegar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: var(--espaco-4);
+    margin-top: var(--espaco-6);
+    padding-top: var(--espaco-5);
+    border-top: 1px solid rgba(13, 27, 42, 0.12);
+}
+
+.hist-navegar a {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--espaco-2);
+    font-size: var(--text-sm);
+    font-weight: var(--weight-semibold);
+    color: var(--cor-principal);
+    transition: color 0.3s ease, gap 0.3s ease;
+}
+
+.hist-navegar a:hover {
+    gap: var(--espaco-3);
+    color: var(--cor-laranja);
+}
+
+.hist-navegar a:focus-visible {
+    outline: 3px solid var(--cor-laranja);
+    outline-offset: 3px;
+}
+
+.hist-navegar svg {
+    width: 18px;
+    height: 18px;
+}
+
+@keyframes hist-anel {
+    from { box-shadow: var(--sombra-lg), 0 0 0 0 rgba(232, 102, 47, 0.55); }
+    to   { box-shadow: var(--sombra-lg), 0 0 0 18px rgba(232, 102, 47, 0); }
+}
+
+.hist-detalhe.jn-destaque .hist-detalhe-conteudo {
+    animation: hist-anel 1.2s ease-out 1;
+}
+
+.hist-encerramento-icone {
+    position: relative;
+}
+
+.hist-encerramento-icone::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 2px solid var(--cor-laranja);
+    border-radius: 50%;
+    animation: hist-pulso 2.4s ease-out infinite;
+    pointer-events: none;
+}
+
+@keyframes hist-pulso {
+    from { transform: scale(1); opacity: 0.7; }
+    to   { transform: scale(1.7); opacity: 0; }
+}
+
+.hist-link-principal,
+.hist-botao {
+    position: relative;
+    overflow: hidden;
+}
+
+.hist-link-principal::after,
+.hist-botao::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(105deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transform: skewX(-20deg);
+    transition: left 0.6s ease;
+    pointer-events: none;
+}
+
+.hist-link-principal:hover::after,
+.hist-botao:hover::after {
+    left: 130%;
+}
+
+.hist-link-principal:active,
+.hist-botao:active,
+.hist-aprendizagem-card:active {
+    transform: scale(0.98);
+}
+
+@media (max-width: 750px) {
+    .hist-topo {
+        right: var(--espaco-4);
+        bottom: var(--espaco-4);
+        width: 44px;
+        height: 44px;
+    }
+
+    .hist-navegar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hist-encerramento-icone::after,
+    .hist-detalhe.jn-destaque .hist-detalhe-conteudo {
+        animation: none;
+    }
+
+    .hist-topo,
+    .hist-link-principal::after,
+    .hist-botao::after {
+        transition: none;
+    }
+}
+

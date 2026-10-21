@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Inicio | Ponto Digital</title>
+    
+</head>
+<body>
+ <header class="cabecalho">
+    <a href="index.html" class="logo">Ponto <span class="ponto">digital</span></a>
+    <nav>
+        <ul class="menu">
+           <li class="menu-item ativo"><a href="index.html" class="ativo">Inicio</a></li>
+           <li class="menu-item"><a href="digitalizar.html">Por que digitalizar?</a></li>
+           <li class="menu-item"><a href="jornada.html">Jornada</a></li>
+           <li class="menu-item"><a href="solucoes.html">Soluções</a></li>
+           <li class="menu-item"><a href="historia.html">História</a></li>
+           <li class="menu-item"><a href="kitDigital.html">Kit Digital</a></li>
+           <li class="menu-item"><a href="contato.html">Contacto</a></li>
+           <li class="menu-item"><a href="faq.html">FAQ</a></li>
+        </ul>
+    </nav>
+     <button class="botao botao-principal sair">
+        <a href="jornada.html">
+            COMEÇAR A JORNADA
+        </a>
+    </button>
+    <button class="botao mobile" id="btn" onclick="abrirMenu()"> <i data-lucide="menu" id="menu-icon"></i></button>
+
+ </header> 
+ 
+ <main>
+    <nav class="navbar-lateral" id="menu" >
+        <ul class="menu-lateral">
+            <li class="nav-item ativo"><a href="index.html" class="ativo">Início</a></li>
+            <li class="nav-item"><a href="digitalizar.html">Por que digitalizar?</a></li>
+            <li class="nav-item"><a href="jornada.html">Jornada</a></li>
+            <li class="nav-item"><a href="solucoes.html">Soluções</a></li>
+            <li class="nav-item"><a href="historia.html">Histórias</a></li>
+            <li class="nav-item"><a href="kitDigital.html" aria-current="page">Kit Digital</a></li>
+            <li class="nav-item"><a href="contato.html">Contacto</a></li>
+            <li class="nav-item"><a href="faq.html">FAQ</a></li>
+        </ul>
+    </nav>
+    <section class="hero">
+        
+        <img src="../img/inicio/hero3.jpg" class="hero__video">
+        <!-- <video  autoplay muted loop playsinline poster="../../img/inicio/hero3.jpg">
+            <source src="../videos/hero.mp4" type="video/mp4">
+        </video>  -->
+        <div class="inicio-cont">
+            <div class="">
+                 <h1 class="titulo">Leve o seu negócio para o <span class="ponto">próximo nivel</span></h1>
+                <p>Há negócios que qualquer pessoa do bairro conhece, mas que, para quem procura de fora, simplesmente não existem. </p>
+                <div class="botoes">
+                    <button class="botao botao-principal sair">
+                        <a href="jornada.html">
+                            COMEÇAR A JORNADA
+                        </a>
+                    </button>
+                    <button class="botao-secundarioI" >
+                        <a href="../paginas/digitalizar.html">Porque digitalizar</a>
+                    </button>
+                </div>
+
+            </div>
+            <div class="img-tel">
+                <img src="../img/inicio/telefone.png">
+            </div>
+           
+            
+        </div>
+    </section>
+
+    
+     <section class="conteiner-online" >
+        <div class="conteudo-online">
+            <h2>O seu negócio esta  <span class="ponto">online ?</span></h2>
+           <div>
+            <i data-lucide="smartphone"></i>
+            <p>Como os clientes encontram o seu negocio?</p>
+            </div>
+            <div>
+                <i data-lucide="package"></i>
+                <p>Como conhecem os seus produtos?</p>
+            </div>
+            <div>
+                <i data-lucide="message-circle"></i>
+                <p>Como entram em contato?</p>
+            </div>
+            <div>
+                <i data-lucide="clock"></i>
+                <p>Onde encontram o seu horario</p>
+            </div>
+            </div>
+           
+        </div>
+        <div class="cont-imagem">
+           
+            <img src="../img/inicio/estaOnline.jpg" alt="imagem sobre o projeto" >
+        
+        </div>
+
+       
+    </section>
+
+     <section class="fundo-facil">
+      
+            <div class=" container conteudo-facil">
+                <h2>E se fosse mais <span class="ponto">facil?</span></h2>
+
+                <div class="grupo-cards">
+                    <div class="card">
+                        <i data-lucide="store"></i>
+                        <span>passo 1</span>
+                        <p>LOJA FISICA</p>
+                    </div>
+                    <div class="card">
+                        <i data-lucide="globe"></i>
+                        <span>passo 2</span>
+                        <p>PRESENCA ONLINE</p>
+                    </div>
+                    <div class="card">
+                    <i data-lucide="map-pin"></i>
+                        <span>passo 3</span>
+                        <p>PRODUTOS VISIVEIS</p>
+                    </div>
+                    <div class="card">
+                        <i data-lucide="users"></i>
+                        <span>RESULTADO</span>
+                        <p>CLIENTES CONECTADOS</p>
+                    </div>
+                </div>
+                <div class="cont-img">
+                    <img src="../img/inicio/facil.jpg" alt="imagem sobre o projeto" class="cont-img">
+            
+                </div>
+                
+            </div>
+       
+       
+    </section>
+
+   <article class="container cont-conteudo">
+    <div class="primeiro-cont">
+        <span>01</span>
+        <h3>SER ENCONTRADO</h3>
+        <p>Ajude os clientes a encontrar o seu negócio no momento em que precisam.</p>
+    </div>
+
+    <div class="segundo-cont">
+        <span>02</span>
+        <h3>MOSTRAR</h3>
+        <p>Apresente os seus produtos e serviços de forma clara e profissional.</p>
+    </div>
+
+    <div class="terceiro-cont">
+        <span>03</span>
+        <h3>CONECTAR</h3>
+        <p>Facilite a comunicação e o agendamento com os seus clientes.</p>
+    </div>
+
+    <div class="quarto-cont">
+        <span>04</span>
+        <h3>CRESCER</h3>
+        <p>Alcance novas pessoas e abra as portas para novas oportunidades de negócio.</p>
+    </div>
+</article>
+
+     <section class="fundo-azul">
+        <div class="container sobre">
+        <div class="conteudo">
+            <h2 class="sub-titulo">Sobre o projeto</h2>
+            <p>O projeto tem como objectivo apoiar negócios moçambicanos a dar o salto para o digital. Sem complicações técnicas, 
+                sem grandes investimentos,só o essencial para começar a vender e a ser encontrado online.
+            </p>
+            <button class="botao-secundarioI" >Comecar a Jornada</button>
+            
+        </div>
+        <div class="imagens">
+            <div class="imagen1">
+             <img src="../img/inicio/sobre.jpg" alt="imagem sobre o projeto" >
+            </div>
+
+            <div class="imagen2">
+             <img src="../img/inicio/sobre1.jpg" alt="imagem sobre o projeto" >
+            </div>
+
+            <div class="imagen3">
+             <img src="../img/inicio/sobre2.jpg" alt="imagem sobre o projeto" >
+            </div>
+       
+        </div>
+        </div>
+    </section>
+
+     <section class="fundo-nao">
+        <div class="container conteudo-nao">
+            <div class="conteudo-1">
+                <h2>Nao precisa fazer tudo de <span class="ponto">uma so vez</span></h2>
+                <p>A digitalizacao comeca com um primeiro passo. Avance ao seu proprio ritmo</p>
+                <button class="botao-principal">Ver jornada completa</button>
+            </div>
+
+            <div class="conteudo-lista">
+                <dl>
+                    <div class="dados">
+                        <div>
+                            <span >01</span>
+                        </div>
+
+                        <div>
+                            <dt>Presenca</dt>
+                            <dd>Registrar o negocio no Google e criar um perfil basico pra ser encontrado</dd>
+                        </div>
+                    </div>
+
+                    <div class="dados">
+                         <div>
+                            <span >02</span>
+                         </div>
+
+                        <div>
+                           <dt> Produto</dt>
+                            <dd>Criar fotografias claras e organizar um catalogo simples pra mostrar o que vende</dd>
+                        </div>
+                    </div>
+
+                    <div  class="dados">
+                         <div>
+                            <span >03</span>
+                         </div>
+
+                        <div>
+                            <dt> Comunicacao</dt>
+                            <dd>Configurar ferramentas de mensagens para responder repetidamente aos clientes </dd>
+                        </div>
+                       
+                    </div>
+                    <div  class="dados">
+                         <div>
+                            <span >04</span>
+                         </div>
+                        <div>
+                           
+                           <dt>Divulgacao</dt>
+                           <dd>Comecar a partilhar novidades e atrair mais pessoas para sua loja</dd>
+                        </div>
+                        
+                    </div>
+
+                    <div  class="dados">
+                         <div>
+                            <span >05</span>
+                         </div>
+                        <div>
+                           <dt>Crescimento</dt>
+                            <dd>Analisar resultados e expandir a sua online </dd>
+                        </div>
+                    </div>
+                </dl>
+            </div>
+        </div>
+       
+    </section>
+
+    <section class="fundo-azul">
+        <div class=" container conteudo-pec">
+            <div class="cont-geral">
+                <h2>Pequenos negócios,</br>grandes<span class="ponto"> mudancas</span></h2>
+                <div class="conteudo-antes-depois">
+                    <div class=" antes">
+                        <span>Antes</span>
+                        <p>Os clientes conheciam os produtos apenas visitando a loja fisica</p>
+                    </div>
+                    <div class="depois">
+                        <span>Depois</span>
+                        <p>Catalogo digital atualizado + presenca online com horario de localizacao preciso</p>
+                    </div>
+                </div>
+        
+            </div>
+
+            <div class="pec-img">
+                <img src="../img/inicio/pequenosNeg.jpg" alt="imagem que mostra uma prquena loja">
+            </div>
+        </div>
+       
+    </section>
+
+    <article class="frase">
+       <h3> O futuro do seu negócio começa com um primeiro passo.</h3>
+       <p>Descubra o que pode fazer hoje para iniciar a sua presença digital</p>
+        <button class="botao botao-principal sair">
+        <a href="jornada.html">
+            COMEÇAR A JORNADA
+        </a>
+    </button>
+    </article>
+ </main>
+
+ <footer class="fundo-sim">
+    <div class="footer-conteudo">
+        <div>
+            <div class="logo-footer">
+                <a href="index.html" class="logo">Ponto <span class="ponto">digital</span></a>
+                <p>Tecnologia mais simples para pequenos negocios em Mocambique</p>
+            </div>
+
+            <div class="redes-sociais">
+                <h3>PLATAFORMA</h3>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="digitalizar.html">Por que digitalizar?</a></li>
+                        <li><a href="jornada.html">Jornada</a></li>
+                    </ul>  
+                </nav>
+             </div>
+            <div class="recursos">
+                <h3>Recursos</h3>
+                <nav>
+                    <ul>
+                        <li><a href="solucoes.html">Solucoes</a></li>
+                        <li><a href="historia.html">Historia</a></li>
+                        <li><a href="kitDigital.html">Kit Dijital</a></li>
+                    </ul>  
+                 </nav>
+            </div>
+            <div class="ajuda">
+                <h3>Ajuda</h3>
+                <nav>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contato.html">Contacto</a></li>
+                        
+                    </ul>  
+                </nav>
+            </div>
+        </div>
+        <p>@ 2026 Ponto Digital. Tecnologia mais simples para pequenos negocios em Mocambique.</p>
+    </div>
+ </footer>
+
+ <script src="../js/paginaInicial.js" ></script>
+ <script src="../js/index.js" ></script>
+
+ <script>lucide.createIcons();</script> 
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script>AOS.init();</script>
+</body>
+</html>

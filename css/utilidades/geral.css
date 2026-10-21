@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-texto-primaria);
+    
+}
+button a{
+    color: #fcfcfc !important;
+}
+i{
+    width: var(--espaco-6);
+    height:var(--espaco-6) ;
+    color: var(--cor-verde-escuro) ;
+}
+
+ul{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    display: block;
+   
+    
+}
+
+body{
+  font-family: var(--font-body);
+   font-size: var(--texto-base);
+  line-height: var(--leading-normal);
+  color: var(--cor-texto-primaria);
+  background-color: #fcfcfc;
+   
+  
+    
+}
+h1,h2,h3,h4,dt{
+    font-family: var(--font-titulo);
+    font-weight: var(--weight-semibold);
+    line-height: var(--leading-tight);
+}
+p,dd{
+  margin: 0 0 var(--espaco-4) 0;
+  color: var(--cor-texto-secondario); 
+  font-weight: var(--weight-medio); 
+}
+
+
+.container{
+    padding: 0 var(--espaco-5);
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+
+
+button {
+  font-family: var(--font-body);
+  font-weight: var(--weight-semibold);
+  font-size: var(--text-base);
+  padding: var(--espaco-3) var(--espaco-4);
+  border-radius: var(--raio-lg);
+  border: none;
+  cursor: pointer;
+  box-shadow: var(--sombra-md);
+  transition: 0.25s;
+}
+
+.botao-principal{
+    color: var(--cor-branco);
+    background-color: var(--cor-texto-primaria);
+    
+}
+.botao-principal:hover{
+    background-color: #19293a;
+    border-radius: 2px;
+    transform: translateY(-2px);
+    
+}
+.botao-secundarioI{
+   background: linear-gradient(to right,#b45329,#E8662F);
+    color: var(--cor-texto-primaria);
+   
+   
+}
+.botao-secundarioI:hover{
+    background-color: #19293a;
+     color: var(--cor-branco);
+    border-radius: 2px; 
+    transform: translateY(-2px);
+}
+.botao.mobile{
+    display: none;
+     padding: var(--espaco-1) var(--espaco-2);
+    border-radius: var(--raio-lg);
+    background-color: var(--cor-principal);
+    color: var(--cor-branco);
+    transition: 0.25s;
+
+}
+.botao.mobile:hover{
+   background-color: var(--cor-principal);
+    
+
+}
+@media(max-width: 750px){
+    .botao.botao-principal.sair{
+        display: none;
+    }
+    .botao.mobile{
+    display: block;
+}
+}
